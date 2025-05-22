@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌾 Agvise AI Seminar Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Visualization & Content Choices: 
+        - Welcome & Overview: Text, lists. Goal: Inform. Method: HTML/Tailwind.
+        - Automate Tedious: Text, lists, HTML table, Chart.js bar chart. Goal: Inform, Compare. Interaction: Year/Crop filter (conceptual, JS for chart display).
+        - Prompt Crafting: Text, table. Goal: Inform, Organize. Method: HTML/Tailwind.
+        - Prompting Guides: Text, lists, code blocks. Goal: Inform, Organize. Interaction: Clickable sub-sections (JS show/hide).
+        - Unlocking Impossible: Text, table, lists. Goal: Inform, Inspire. Method: HTML/Tailwind.
+        - Secure/Sustainable AI: Text, lists, table. Goal: Inform, Guide. Method: HTML/Tailwind.
+        - Personal Challenge: Text, lists (worksheet outline). Goal: Guide, Engage. Method: HTML/Tailwind.
+        - Core Tensions: Text, tables. Goal: Inform, Reflect. Method: HTML/Tailwind.
+        - Wrap-Up: Text, lists. Goal: Summarize, Guide. Method: HTML/Tailwind.
+        All choices support the designed structure and prioritize clarity.
+    -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif; /* Tailwind default is sans-serif, Inter is a common nice choice */
+        }
+        .sidebar-link.active {
+            background-color: #2dd4bf; /* Tailwind teal-400 */
+            color: white;
+        }
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+        .chart-container {
+            position: relative;
+            margin: auto;
+        }
+        /* Custom scrollbar for webkit browsers */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; /* Tailwind slate-300 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; /* Tailwind slate-500 */
+        }
+        /* For Firefox */
+        * {
+          scrollbar-width: thin;
+          scrollbar-color: #cbd5e1 #f1f1f1;
+        }
+    </style>
+</head>
+<body class="bg-stone-100 text-stone-800 flex flex-col md:flex-row min-h-screen">
+
+    <aside class="w-full md:w-64 bg-stone-200 p-6 shadow-lg fixed md:sticky top-0 h-screen overflow-y-auto md:flex-shrink-0 z-20">
+        <h1 class="text-2xl font-bold text-teal-700 mb-6">🌾 Agvise AI Seminar</h1>
+        <nav>
+            <ul class="space-y-2">
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="welcome">Welcome & Overview</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="automate">Automate the Tedious</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="craft">Prompt Crafting (CRAFT)</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="prompt_guides">Prompting Guides</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="unlocking">Unlocking the Impossible</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="secure_ai">Secure & Sustainable AI</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="challenge">Personal AI Challenge</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="tensions">Core Tensions in AI</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="wrap_up">Wrap-Up & Next Steps</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="flex-1 p-6 md:p-10 overflow-y-auto mt-16 md:mt-0">
+        <section id="welcome" class="content-section active">
+            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">Welcome & Seminar Overview</h2>
+            <p class="mb-4 text-lg">This interactive hub provides all the materials for the "AI-Powered Productivity for Consultants" seminar. Navigate through the sections to explore how AI can enhance your work, from automating routine tasks to unlocking new strategic possibilities.</p>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">Seminar Details</h3>
+                <p><strong>Title:</strong> 🌾 AI-Powered Productivity for Consultants: From Automating the Tedious to Unlocking the Impossible</p>
+                <p><strong>Facilitator:</strong> Michael Borck</p>
+                <p><strong>Duration:</strong> 2 hours</p>
+                <p><strong>Format:</strong> Instructor-led, interactive, tool-based seminar (no slides)</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">🧠 Learning Goals</h3>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>Automate common consulting tasks using AI in Word/Excel.</li>
+                    <li>Write better prompts using the CRAFT framework.</li>
+                    <li>Explore emerging tools like NotebookLM for internal knowledge work.</li>
+                    <li>Understand AI limitations, privacy, and sustainable use.</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">🔧 Participant Setup & Access Requirements</h3>
+                 <p class="mb-2">To get the most out of this session, please ensure you have:</p>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>✅ Microsoft 365 (Office 365) account</li>
+                    <li>✅ Google Account (personal or work)</li>
+                    <li>✅ A laptop or suitable computing device</li>
+                    <li>🧠 Optional: Access to other LLM tools (e.g., ChatGPT, Claude, Gemini)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="automate" class="content-section">
+            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">⚙️ Automate the Tedious</h2>
+            <p class="mb-4 text-lg">This section focuses on how AI can eliminate repetitive and time-consuming tasks in consulting, particularly around reporting, summarising, and rewording. We'll explore how to evolve from basic prompting to more complex, value-added interactions.</p>
+
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">🎯 Purpose</h3>
+                <p>Show how AI can help eliminate repetitive and time-consuming tasks that consultants perform every week — particularly around reporting, summarising, and rewording. Demonstrate the evolution from basic prompting to prompt chaining, multi-role reasoning, and value-added insight.</p>
+            </div>
+             <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">🧠 Framing</h3>
+                <p class="italic mb-2">“Let’s be honest — a lot of time is spent copying, pasting, rewording, and formatting. These are things that don’t require judgment — but they do require time. AI can help us take these off the plate.”</p>
+                <p>Guiding Questions for this section:</p>
+                <ol class="list-decimal list-inside ml-4">
+                    <li>How can we automate what we already do?</li>
+                    <li>What could we never do — until now?</li>
+                </ol>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">🧪 Live Demo Examples (Conceptual)</h3>
+                <p class="mb-2">We'll work with mock datasets and public article excerpts. Tools: Copilot Chat, ChatGPT, Claude, or Gemini.</p>
+                
+                <div class="mb-4 p-4 border border-stone-300 rounded-lg">
+                    <h4 class="font-semibold text-teal-700">DEMO 1: Summarise Mock Crop Data</h4>
+                    <p class="mb-1"><strong>Initial Prompt:</strong> “You are a junior analyst. Summarise this farm production and financial table. Highlight which crop performed best each year and any concerning trends.”</p>
+                    <p><strong>Follow-Up Prompt:</strong> “Now rewrite that summary for a broadacre WA farm client in plain English.”</p>
+                    <p class="text-sm text-stone-600 mt-1">📌 Highlight: Basic prompting → tone/format shift → value-added rewrite.</p>
+                </div>
+
+                <div class="mb-4 p-4 border border-stone-300 rounded-lg">
+                    <h4 class="font-semibold text-teal-700">DEMO 2: Turn Insights into Content</h4>
+                    <p class="mb-1"><strong>Prompt:</strong> “Using the summary above, create a LinkedIn post highlighting farm performance and grain yield outcomes in 2023.”</p>
+                    <p><strong>Variation Prompt:</strong> “Write this as a newsletter article with subheadings and 3 key takeaways.”</p>
+                    <p class="text-sm text-stone-600 mt-1">📌 Highlight: Reusing same insight → multiple content formats.</p>
+                </div>
+
+                <div class="mb-4 p-4 border border-stone-300 rounded-lg">
+                    <h4 class="font-semibold text-teal-700">DEMO 3: Reason Like a Consultant</h4>
+                    <p class="mb-1"><strong>Prompt Chain:</strong></p>
+                    <ol class="list-decimal list-inside ml-4 text-sm">
+                        <li>“Act as a junior analyst: summarise.”</li>
+                        <li>“Act as a senior consultant: critique the summary.”</li>
+                        <li>“Merge both into a final report section.”</li>
+                    </ol>
+                    <p class="text-sm text-stone-600 mt-1">📌 Highlight: Role simulation, layered prompting, critical refinement.</p>
+                </div>
+
+                 <div class="mb-4 p-4 border border-stone-300 rounded-lg">
+                    <h4 class="font-semibold text-teal-700">DEMO 4: Prompt as Workflow (Agent Logic)</h4>
+                    <p class="mb-1"><strong>Single Orchestration Prompt:</strong> “Read this data and a short market summary. Then: 1) summarise trends, 2) highlight 3 risks, 3) write strategy suggestions, and 4) draft a report paragraph. Label each step.”</p>
+                    <p class="text-sm text-stone-600 mt-1">📌 Highlight: Single prompt → full workflow (agent-like behavior).</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">📊 Mock Crop Data Visualization</h3>
+                <p class="mb-2">Below is a sample visualization of the mock crop data. This demonstrates how AI can help in quickly understanding and presenting data insights.</p>
+                <div class="chart-container w-full max-w-3xl mx-auto h-[50vh] md:h-[60vh] max-h-[500px] relative">
+                    <canvas id="cropProfitChart"></canvas>
+                </div>
+                <div class="mt-4 text-center">
+                    <label for="yearFilter" class="mr-2 font-medium">Filter by Year:</label>
+                    <select id="yearFilter" class="p-2 border border-stone-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500">
+                        <option value="all">All Years</option>
+                    </select>
+                </div>
+                <div class="mt-4 text-center">
+                    <button id="downloadCsvBtn" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-lg shadow-md transition-colors duration-200">
+                        Download Mock Data (CSV)
+                    </button>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">🛠 Optional Prompt Enhancers</h3>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>“Use plain English suitable for farm clients.”</li>
+                    <li>“Structure as a summary with headings.”</li>
+                    <li>“Limit to 100 words per section.”</li>
+                    <li>“Write like a trusted Agvise consultant.”</li>
+                </ul>
+            </div>
+
+            <div class="bg-amber-100 p-6 rounded-lg shadow-md border-l-4 border-amber-500">
+                <h3 class="text-xl font-semibold text-amber-700 mb-3">💬 Discussion Prompt</h3>
+                <p class="mb-1">“Which parts of your reporting process could this help with?”</p>
+                <p>“Where might AI reduce your time-to-insight without sacrificing accuracy?”</p>
+            </div>
+        </section>
+
+        <section id="craft" class="content-section">
+            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">🔨 Prompt Crafting with CRAFT</h2>
+            <p class="mb-4 text-lg">Learn how to write better prompts that yield more relevant, high-quality AI responses using the structured CRAFT framework.</p>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">💡 Why It Matters</h3>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>Most disappointing AI results are due to vague or context-free prompts.</li>
+                    <li>Structured prompts produce better outputs with less rework.</li>
+                    <li>Good prompting is platform-agnostic: it works in ChatGPT, Copilot, Gemini, Claude, etc.</li>
+                </ul>
+                <p class="mt-2 italic">"Think of prompting like a briefing: the better you brief the AI, the better its draft. But also — the first prompt is rarely the final answer. Good prompts invite a conversation, not just a command."</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">🧠 C.R.A.F.T Framework</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-stone-200">
+                        <thead class="bg-stone-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">Letter</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">Meaning</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">Example</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-stone-200">
+                            <tr><td class="px-6 py-4 whitespace-nowrap">C</td><td class="px-6 py-4 whitespace-nowrap"><strong>Context</strong></td><td class="px-6 py-4">"This data is from a WA mixed farm over 5 years."</td></tr>
+                            <tr><td class="px-6 py-4 whitespace-nowrap">R</td><td class="px-6 py-4 whitespace-nowrap"><strong>Role</strong></td><td class="px-6 py-4">"You are a senior ag consultant."</td></tr>
+                            <tr><td class="px-6 py-4 whitespace-nowrap">A</td><td class="px-6 py-4 whitespace-nowrap"><strong>Action</strong></td><td class="px-6 py-4">"Summarise the financial trends."</td></tr>
+                            <tr><td class="px-6 py-4 whitespace-nowrap">F</td><td class="px-6 py-4 whitespace-nowrap"><strong>Format</strong></td><td class="px-6 py-4">"Write in bullet points."</td></tr>
+                            <tr><td class="px-6 py-4 whitespace-nowrap">T</td><td class="px-6 py-4 whitespace-nowrap"><strong>Tone/Target</strong></td><td class="px-6 py-4">"Use plain English for the farm owner."</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="mt-2 italic">"You don’t have to use every element every time — but this gives you the scaffolding."</p>
+            </div>
+             <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">🗣️ Prompting as a Conversation</h3>
+                <p>"CRAFT is a great starting point — but don't stop there. One-shot prompting can feel transactional. The real power is in using AI as a collaborator."</p>
+                <p class="italic mt-2">"Think of CRAFT as your first message to a new colleague. The next steps are to discuss, clarify, iterate."</p>
+                <h4 class="font-semibold mt-3">Example Chain:</h4>
+                <ol class="list-decimal list-inside ml-4 text-sm">
+                    <li>Craft a CRAFT-style summary prompt.</li>
+                    <li>Follow up: "Add any year-on-year risks you see."</li>
+                    <li>Follow up: "Now restructure that for a client newsletter."</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="prompt_guides" class="content-section">
+            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">📚 Prompting Guides & Examples</h2>
+            <p class="mb-4 text-lg">Explore a collection of prompt patterns, techniques, and examples to enhance your AI interactions for various consulting tasks.</p>
+            
+            <div class="space-y-6">
+                <details class="bg-white p-4 rounded-lg shadow">
+                    <summary class="font-semibold text-lg text-teal-700 cursor-pointer">Value-Adding Prompts</summary>
+                    <div class="mt-2 text-stone-700 space-y-2">
+                        <p><strong>Summary Use Case:</strong> "Summarise the key insights from this annual farm business review. Use plain English. Focus on production, financials, and risk outcomes."</p>
+                        <p><strong>Marketing Use Case:</strong> "Turn this report into a newsletter article for farm business owners. Highlight strong grain yields, cashflow recovery, and return on capital. Use a professional and optimistic tone."</p>
+                        <p><strong>Thought Leadership (LinkedIn):</strong> "Write a short LinkedIn post summarising this 2023 farm report. Focus on ROI, yield, and forward planning. Make it professional and client-facing."</p>
+                         <p><strong>Strategy Use Case (Lessons Learned):</strong> "From this report, extract 3 lessons other farms could learn from this client’s performance and decision-making in 2023."</p>
+                    </div>
+                </details>
+
+                <details class="bg-white p-4 rounded-lg shadow">
+                    <summary class="font-semibold text-lg text-teal-700 cursor-pointer">Prompt Chaining Techniques</summary>
+                    <div class="mt-2 text-stone-700 space-y-2">
+                        <p><strong>Guided Workflow (Full Chain):</strong> "You are an AI assistant... Follow these steps: 1. Summarise data. 2. Analyse market outlook. 3. Generate strategic recommendations. 4. Combine into a report..."</p>
+                        <p><strong>Modular Prompt Chain (Explicit Steps):</strong> "You are a multi-step reasoning assistant... Step 1: Summarise table. Step 2: Analyse market excerpt..."</p>
+                        <p><strong>Interactive Chain (Pause Between Steps):</strong> "You are an AI assistant performing a four-step workflow. Complete step 1, then wait for me to type CONTINUE..."</p>
+                    </div>
+                </details>
+
+                <details class="bg-white p-4 rounded-lg shadow">
+                    <summary class="font-semibold text-lg text-teal-700 cursor-pointer">Advanced AI Prompting Tips</summary>
+                    <div class="mt-2 text-stone-700 space-y-2">
+                        <p><strong>AI Debate Technique:</strong> Have two AIs critique each other's solutions.</p>
+                        <p><strong>Different AIs for Different Roles:</strong> Assign specialized roles (Farm Architect AI, Crop Implementation AI).</p>
+                        <p><strong>Chain-of-Thought Programming:</strong> Guide AI step-by-step through complex problems.</p>
+                        <p><strong>Reverse Engineering:</strong> Ask AI to explain existing practices/technologies.</p>
+                        <p><strong>Progressive Disclosure:</strong> Start minimal, gradually add context.</p>
+                        <p><strong>Persona-Based Prompting:</strong> "As an agronomist...", "As an economist...".</p>
+                    </div>
+                </details>
+                 <details class="bg-white p-4 rounded-lg shadow">
+                    <summary class="font-semibold text-lg text-teal-700 cursor-pointer">Prompt Playbook Highlights</summary>
+                    <div class="mt-2 text-stone-700 space-y-2">
+                        <p><strong>One-Shot Starters:</strong> "Summarise this table.", "Rewrite for a client."</p>
+                        <p><strong>Multi-Turn Chains:</strong> "1. Summarise. 2. Risks? 3. Report section."</p>
+                        <p><strong>CRAFT-Based:</strong> "This data is from... You are a... Summarise trends... Output in bullets..."</p>
+                        <p><strong>Reflection Prompts:</strong> "What’s one part of your job AI could help with?"</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section id="unlocking" class="content-section">
+            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">🌟 Unlocking the Impossible</h2>
+             <p class="mb-4 text-lg">This section helps us see beyond automation to how AI can expand our capabilities, enabling tasks previously too complex, time-consuming, or costly.</p>
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">💡 Framing Statement</h3>
+                <p class="italic">“So far, we’ve looked at how to automate what you already do. Now let’s ask a better question: — What have you never been able to do because it felt too hard, too slow, or too expensive? AI may now make those things possible.”</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">🧠 Examples of "Impossible" Tasks AI Can Now Tackle</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-stone-200">
+                        <thead class="bg-stone-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">Task Type</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">Previously Hard/Impossible</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">Now Possible With AI</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-stone-200">
+                            <tr><td class="px-6 py-4">Market synthesis</td><td class="px-6 py-4">Reading & comparing 5+ articles fast</td><td class="px-6 py-4">Summarise and extract insights instantly</td></tr>
+                            <tr><td class="px-6 py-4">Report repurposing</td><td class="px-6 py-4">Turning 1 report into 3 formats</td><td class="px-6 py-4">Reformat for client, email, or blog post</td></tr>
+                            <tr><td class="px-6 py-4">Internal Q&A</td><td class="px-6 py-4">Answering SOP/policy questions on demand</td><td class="px-6 py-4">Summarise docs into NotebookLM</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">🤖 NotebookLM: AI That Knows Your Documents</h3>
+                <p class="mb-2">NotebookLM is Google’s AI notebook that reads and cites *your* content. Upload SOPs, reports, policies, and query them. It's great for internal insights, onboarding, and strategy documents.</p>
+                <h4 class="font-semibold mt-2">Use Cases for Agvise:</h4>
+                <ul class="list-disc list-inside ml-4 text-sm">
+                    <li>Ask: “How do we usually advise on lease arrangements?”</li>
+                    <li>Summarise changes in advice over 3 years.</li>
+                    <li>New staff can ask Qs without bugging seniors.</li>
+                </ul>
+                 <p class="mt-2 text-sm text-stone-600"><strong>Limitations:</strong> Not suitable for client-sensitive content (yet). Still in beta — best used for internal knowledge reuse.</p>
+            </div>
+        </section>
+
+        <section id="secure_ai" class="content-section">
+            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">🔒 Secure & Sustainable AI Use</h2>
+            <p class="mb-4 text-lg">Grounding our AI exploration in responsible use is crucial. This section covers how to use AI confidently without risking sensitive data, and how to think long-term about secure, governed AI integration.</p>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">📄 Framing Statement</h3>
+                <p class="italic">“Even if the AI gets the right answer, if you use the wrong data or tool, it can create serious risk. Let’s talk about what’s safe, what’s smart, and what’s sustainable in your setting.”</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">🔍 Key Principles</h3>
+                <ol class="list-decimal list-inside space-y-1">
+                    <li>Use mock or public data in all experiments (especially with public tools).</li>
+                    <li>Assume anything entered into a public AI chat is public.</li>
+                    <li>Use your secure platforms (like M365 Copilot) for sensitive work.</li>
+                    <li>Prototype in chat tools, deploy in secure environments.</li>
+                    <li>Governance is a team sport: involve IT/security.</li>
+                </ol>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">🤖 AI Tools: What’s Under the Hood?</h3>
+                 <ul class="list-disc list-inside space-y-1">
+                    <li><strong>Copilot / ChatGPT:</strong> LLMs trained to predict useful text. Copilot is integrated into M365; ChatGPT is public-facing unless restricted.</li>
+                    <li><strong>Prompt Engineering:</strong> Structuring your input (Context, Role, Action, Format, Task - CRAFT) to guide AI output.</li>
+                    <li><strong>Agents:</strong> Tools that reason and act in steps (e.g., AutoGPT). Conceptually similar to complex prompt chains.</li>
+                    <li><strong>Key Concepts:</strong> Context Window (AI's short-term memory), Temperature (creativity/randomness), AI predicts, not "thinks".</li>
+                    <li><strong>Security & Risk:</strong> Copilot data stays in your M365 tenant. Avoid client-sensitive data in public ChatGPT. Always verify AI output.</li>
+                    <li><strong>MCPs (Most Capable Prompt):</strong> Prompts that instruct AI to simulate an expert role (e.g., "You are a senior farm consultant...").</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="challenge" class="content-section">
+            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">🧩 Personal AI Challenge</h2>
+            <p class="mb-4 text-lg">Apply what you've learned to a personal, meaningful task. This is a space for experimentation, reflection, and building confidence in your AI prompting skills.</p>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">📝 Worksheet Prompts</h3>
+                <ol class="list-decimal list-inside space-y-2">
+                    <li>What’s the task or challenge you’re exploring? (e.g., Summarising farm reports into client-ready text)</li>
+                    <li>What do you currently do?</li>
+                    <li>Draft your CRAFT prompt for this task.</li>
+                    <li>Which tool would you try? (☐ Copilot ☐ ChatGPT ☐ Claude ☐ NotebookLM ☐ Not sure)</li>
+                    <li>What would success look like for this task?</li>
+                    <li><strong>Reflection:</strong> Surprised by the output? Would you use it again? Where might it fit in your workflow?</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="tensions" class="content-section">
+            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">⚖️ Core Tensions in AI-Assisted Work</h2>
+            <p class="mb-4 text-lg">AI is powerful, but it introduces trade-offs. This section highlights key tensions to consider for balancing ambition with caution.</p>
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">🧠 Thinking vs. Replacing</h3>
+                <p><strong>Tension:</strong> "AI thinks for me" vs. "AI replaces my work"</p>
+                <p><strong>What to Remember:</strong> Use AI to support reasoning, not bypass it. It's a partner, not a substitute.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">🎯 Prompting vs. Collaborating</h3>
+                <p><strong>Tension:</strong> One-shot prompting vs. Over-engineering prompts</p>
+                <p><strong>What to Remember:</strong> Most good outcomes need back-and-forth. CRAFT is a start, not the finish.</p>
+            </div>
+             <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">🏁 Wrap-Up Thought</h3>
+                <p class="italic">“AI doesn’t eliminate trade-offs — it just reshapes them. The best practitioners navigate these tensions with clarity, not certainty. You don’t need to solve everything — you just need to notice where the friction lives.”</p>
+            </div>
+        </section>
+
+        <section id="wrap_up" class="content-section">
+            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">🎁 Wrap-Up & Next Steps</h2>
+            <p class="mb-4 text-lg">Concluding the seminar with clarity, confidence, and practical next steps to integrate AI into your workflows.</p>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">🚀 Next Steps</h3>
+                <p class="mb-2 italic">“You don’t need permission to start — you just need a use case. Start small, stay safe, and build from there.”</p>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>Prototype one idea next week (AI summary, blog, table analysis).</li>
+                    <li>Share one working prompt with a colleague.</li>
+                    <li>Bring ideas to your next team or strategy session.</li>
+                </ul>
+            </div>
+             <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">🚀 Follow-Up Options</h3>
+                <p class="mb-2">If the team would benefit from continued support, consider:</p>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><strong>Prompt to Process Workshop:</strong> Turn prompt chains into automated workflows (n8n, Power Automate, Zapier).</li>
+                    <li><strong>Copilot Integration Working Session:</strong> Map current Word/Excel workflows to Copilot.</li>
+                    <li><strong>AI Adoption Brief or Playbook:</strong> Custom internal resource with prompts, Copilot guidance, and security best practices.</li>
+                </ul>
+            </div>
+            <div class="bg-amber-100 p-6 rounded-lg shadow-md border-l-4 border-amber-500">
+                <h3 class="text-xl font-semibold text-amber-700 mb-3">🏁 Final Takeaway</h3>
+                <p class="italic">“You don’t have to master AI today. But if you can start thinking with it — shaping questions, exploring answers, refining together — you’ve already unlocked the most powerful part of the tool.”</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const sidebarLinks = document.querySelectorAll('.sidebar-link');
+        const contentSections = document.querySelectorAll('.content-section');
+        const yearFilter = document.getElementById('yearFilter');
+        let cropProfitChart = null;
+
+        const mockCropData = [
+            { Year: 2018, Crop: "Wheat", Yield_t_ha: 2.4, Price_$_t: 328.62, Revenue_$_ha: 788.69, Cost_$_ha: 420, Profit_$_ha: 368.69 },
+            { Year: 2018, Crop: "Barley", Yield_t_ha: 2.69, Price_$_t: 305.23, Revenue_$_ha: 821.07, Cost_$_ha: 380, Profit_$_ha: 441.07 },
+            { Year: 2018, Crop: "Canola", Yield_t_ha: 1.34, Price_$_t: 597.66, Revenue_$_ha: 800.86, Cost_$_ha: 500, Profit_$_ha: 300.86 },
+            { Year: 2018, Crop: "Lupins", Yield_t_ha: 1.92, Price_$_t: 457.67, Revenue_$_ha: 878.73, Cost_$_ha: 360, Profit_$_ha: 518.73 },
+            { Year: 2019, Crop: "Wheat", Yield_t_ha: 1.35, Price_$_t: 335.43, Revenue_$_ha: 452.83, Cost_$_ha: 420, Profit_$_ha: 32.83 },
+            { Year: 2019, Crop: "Barley", Yield_t_ha: 1.61, Price_$_t: 285.34, Revenue_$_ha: 459.4, Cost_$_ha: 380, Profit_$_ha: 79.4 },
+            { Year: 2019, Crop: "Canola", Yield_t_ha: 1.04, Price_$_t: 580.87, Revenue_$_ha: 604.1, Cost_$_ha: 500, Profit_$_ha: 104.1 },
+            { Year: 2019, Crop: "Lupins", Yield_t_ha: 0.78, Price_$_t: 444.38, Revenue_$_ha: 346.62, Cost_$_ha: 360, Profit_$_ha: -13.38 },
+            { Year: 2020, Crop: "Wheat", Yield_t_ha: 2.01, Price_$_t: 333.14, Revenue_$_ha: 669.61, Cost_$_ha: 420, Profit_$_ha: 249.61 },
+            { Year: 2020, Crop: "Barley", Yield_t_ha: 2.48, Price_$_t: 275.88, Revenue_$_ha: 684.18, Cost_$_ha: 380, Profit_$_ha: 304.18 },
+            { Year: 2020, Crop: "Canola", Yield_t_ha: 1.91, Price_$_t: 597.74, Revenue_$_ha: 1141.68, Cost_$_ha: 500, Profit_$_ha: 641.68 },
+            { Year: 2020, Crop: "Lupins", Yield_t_ha: 1.77, Price_$_t: 435.75, Revenue_$_ha: 771.28, Cost_$_ha: 360, Profit_$_ha: 411.28 },
+            { Year: 2021, Crop: "Wheat", Yield_t_ha: 2.64, Price_$_t: 331.11, Revenue_$_ha: 874.13, Cost_$_ha: 420, Profit_$_ha: 454.13 },
+            { Year: 2021, Crop: "Barley", Yield_t_ha: 2.9, Price_$_t: 293.76, Revenue_$_ha: 851.9, Cost_$_ha: 380, Profit_$_ha: 471.9 },
+            { Year: 2021, Crop: "Canola", Yield_t_ha: 1.67, Price_$_t: 597.08, Revenue_$_ha: 997.12, Cost_$_ha: 500, Profit_$_ha: 497.12 },
+            { Year: 2021, Crop: "Lupins", Yield_t_ha: 1.96, Price_$_t: 468.52, Revenue_$_ha: 918.3, Cost_$_ha: 360, Profit_$_ha: 558.3 },
+            { Year: 2022, Crop: "Wheat", Yield_t_ha: 2.08, Price_$_t: 319.42, Revenue_$_ha: 664.39, Cost_$_ha: 420, Profit_$_ha: 244.39 },
+            { Year: 2022, Crop: "Barley", Yield_t_ha: 2.62, Price_$_t: 277.79, Revenue_$_ha: 727.81, Cost_$_ha: 380, Profit_$_ha: 347.81 },
+            { Year: 2022, Crop: "Canola", Yield_t_ha: 1.38, Price_$_t: 580.4, Revenue_$_ha: 800.95, Cost_$_ha: 500, Profit_$_ha: 300.95 },
+            { Year: 2022, Crop: "Lupins", Yield_t_ha: 1.25, Price_$_t: 451.97, Revenue_$_ha: 564.96, Cost_$_ha: 360, Profit_$_ha: 204.96 },
+            { Year: 2023, Crop: "Wheat", Yield_t_ha: 2.61, Price_$_t: 331.71, Revenue_$_ha: 865.76, Cost_$_ha: 420, Profit_$_ha: 445.76 },
+            { Year: 2023, Crop: "Barley", Yield_t_ha: 2.59, Price_$_t: 286.99, Revenue_$_ha: 743.3, Cost_$_ha: 380, Profit_$_ha: 363.3 },
+            { Year: 2023, Crop: "Canola", Yield_t_ha: 1.1, Price_$_t: 592.8, Revenue_$_ha: 652.08, Cost_$_ha: 500, Profit_$_ha: 152.08 },
+            { Year: 2023, Crop: "Lupins", Yield_t_ha: 1.59, Price_$_t: 460.57, Revenue_$_ha: 732.31, Cost_$_ha: 360, Profit_$_ha: 372.31 }
+        ];
+
+        function populateYearFilter() {
+            const years = [...new Set(mockCropData.map(item => item.Year))].sort();
+            years.forEach(year => {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = year;
+                yearFilter.appendChild(option);
+            });
+        }
+
+        function renderChart(selectedYear = 'all') {
+            const ctx = document.getElementById('cropProfitChart').getContext('2d');
+            let filteredData = mockCropData;
+
+            if (selectedYear !== 'all') {
+                filteredData = mockCropData.filter(item => item.Year == selectedYear);
+            }
+
+            const crops = [...new Set(filteredData.map(item => item.Crop))];
+            const datasets = [];
+
+            if (selectedYear === 'all') {
+                // Group by year, then by crop
+                const years = [...new Set(filteredData.map(item => item.Year))].sort();
+                const cropColors = {
+                    "Wheat": 'rgba(255, 99, 132, 0.7)',
+                    "Barley": 'rgba(54, 162, 235, 0.7)',
+                    "Canola": 'rgba(255, 206, 86, 0.7)',
+                    "Lupins": 'rgba(75, 192, 192, 0.7)'
+                };
+                 crops.forEach(crop => {
+                    datasets.push({
+                        label: crop,
+                        data: years.map(year => {
+                            const entry = filteredData.find(d => d.Year === year && d.Crop === crop);
+                            return entry ? entry.Profit_$_ha : 0;
+                        }),
+                        backgroundColor: cropColors[crop] || 'rgba(153, 102, 255, 0.7)',
+                        borderColor: cropColors[crop] ? cropColors[crop].replace('0.7', '1') : 'rgba(153, 102, 255, 1)',
+                        borderWidth: 1
+                    });
+                });
+                 if (cropProfitChart) {
+                    cropProfitChart.destroy();
+                }
+                cropProfitChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: years,
+                        datasets: datasets
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: { beginAtZero: true, title: { display: true, text: 'Profit ($/ha)'} },
+                            x: { title: { display: true, text: 'Year'} }
+                        },
+                        plugins: {
+                            title: { display: true, text: 'Crop Profitability Over Years', font: { size: 16 } },
+                            tooltip: { mode: 'index', intersect: false }
+                        }
+                    }
+                });
+
+            } else {
+                // Single year selected, show profit per crop
+                const profits = crops.map(crop => {
+                    const entry = filteredData.find(d => d.Crop === crop);
+                    return entry ? entry.Profit_$_ha : 0;
+                });
+                if (cropProfitChart) {
+                    cropProfitChart.destroy();
+                }
+                cropProfitChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: crops,
+                        datasets: [{
+                            label: `Profit ($/ha) in ${selectedYear}`,
+                            data: profits,
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.7)',
+                                'rgba(54, 162, 235, 0.7)',
+                                'rgba(255, 206, 86, 0.7)',
+                                'rgba(75, 192, 192, 0.7)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: { beginAtZero: true, title: { display: true, text: 'Profit ($/ha)'} },
+                            x: { title: { display: true, text: 'Crop'} }
+                        },
+                        plugins: {
+                            title: { display: true, text: `Crop Profitability in ${selectedYear}`, font: { size: 16 } },
+                            legend: { display: false }
+                        }
+                    }
+                });
+            }
+        }
+        
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.dataset.target;
+
+                sidebarLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+
+                contentSections.forEach(section => {
+                    section.classList.remove('active');
+                    if (section.id === targetId) {
+                        section.classList.add('active');
+                    }
+                });
+                if (targetId === 'automate') {
+                    renderChart(yearFilter.value);
+                }
+            });
+        });
+
+        yearFilter.addEventListener('change', (e) => {
+            renderChart(e.target.value);
+        });
+
+        document.getElementById('downloadCsvBtn').addEventListener('click', () => {
+            const headers = Object.keys(mockCropData[0]).join(',');
+            const rows = mockCropData.map(row => Object.values(row).join(',')).join('\n');
+            const csvContent = headers + '\n' + rows;
+
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            if (link.download !== undefined) { // Feature detection
+                const url = URL.createObjectURL(blob);
+                link.setAttribute('href', url);
+                link.setAttribute('download', 'agvise_mock_crop_data.csv');
+                link.style.visibility = 'hidden';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            } else {
+                // Fallback for older browsers
+                alert('Your browser does not support automatic CSV download. Please copy the data manually.');
+                console.log(csvContent);
+            }
+        });
+        
+        // Initialize
+        if (sidebarLinks.length > 0) {
+            sidebarLinks[0].click(); // Activate the first link by default
+        }
+        populateYearFilter();
+
+        // Collapsible sections for Prompting Guides
+        document.querySelectorAll('#prompt_guides details summary').forEach(summary => {
+            summary.addEventListener('click', (e) => {
+                const detail = e.target.parentElement;
+                if (detail.open) {
+                    // Optional: Add animation or specific logic when closing
+                } else {
+                    // Optional: Add animation or specific logic when opening
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
+

@@ -1,8 +1,7 @@
 # Welcome to the Agvise AI Seminar!
 
-We're thrilled to have you join us for this interactive seminar on **AI-Powered Productivity for Consultants**.
-
 Throughout this session, we'll explore how Artificial Intelligence can help you:
+
 * **Automate tedious tasks** and free up your valuable time.
 * **Unlock new possibilities** in client-facing and internal operations that were previously out of reach.
 * Develop **structured prompting strategies** to get the best out of AI tools.
