@@ -1,0 +1,34 @@
+# .github/workflows/deploy.yml
+
+name: Deploy MkDocs to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Trigger the workflow on pushes to the main branch
+  workflow_dispatch: # Allows manual triggering of the workflow from GitHub Actions tab
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest # Use a fresh Ubuntu environment for each build
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4 # Action to check out your repository code
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x' # Specify a Python version
+
+      - name: Install MkDocs and dependencies
+        run: |
+          pip install mkdocs mkdocs-material # Install MkDocs and any themes/plugins you use (e.g., mkdocs-material)
+          # If you have extra requirements, add:
+          # pip install -r requirements.txt
+
+      - name: Deploy MkDocs site
+        run: mkdocs gh-deploy --force # Use mkdocs gh-deploy to build and push to gh-pages branch
+                                   # --force is often used to overwrite existing gh-pages content
+                                   # You might remove --force if you want to be more cautious,
+                                   # but for simple static sites, it's common.
