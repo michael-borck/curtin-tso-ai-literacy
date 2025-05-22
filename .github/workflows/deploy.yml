@@ -8,27 +8,29 @@ on:
       - main # Trigger the workflow on pushes to the main branch
   workflow_dispatch: # Allows manual triggering of the workflow from GitHub Actions tab
 
+# Add this permissions block
+permissions:
+  contents: write # This grants write access to the repository contents
+  pages: write    # This is specifically for GitHub Pages deployments
+  id-token: write # Required for OpenID Connect (OIDC) authentication, good practice
+
 jobs:
   deploy:
-    runs-on: ubuntu-latest # Use a fresh Ubuntu environment for each build
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4 # Action to check out your repository code
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x' # Specify a Python version
+          python-version: '3.x'
 
       - name: Install MkDocs and dependencies
         run: |
-          pip install mkdocs mkdocs-material # Install MkDocs and any themes/plugins you use (e.g., mkdocs-material)
-          # If you have extra requirements, add:
-          # pip install -r requirements.txt
+          pip install mkdocs mkdocs-material
 
       - name: Deploy MkDocs site
-        run: mkdocs gh-deploy --force # Use mkdocs gh-deploy to build and push to gh-pages branch
-                                   # --force is often used to overwrite existing gh-pages content
-                                   # You might remove --force if you want to be more cautious,
-                                   # but for simple static sites, it's common.
+        run: mkdocs gh-deploy --force
+
