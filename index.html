@@ -16,6 +16,8 @@
         - Personal Challenge: Text, lists (worksheet outline). Goal: Guide, Engage. Method: HTML/Tailwind.
         - Core Tensions: Text, tables. Goal: Inform, Reflect. Method: HTML/Tailwind.
         - Wrap-Up: Text, lists. Goal: Summarize, Guide. Method: HTML/Tailwind.
+        - Seminar Podcast/Audio: Link to external audio. Goal: Accessibility, Distribution. Method: HTML/Link.
+        - PDF Download: Link to full site PDF. Goal: Offline Access, Comprehensive Handout. Method: HTML/Link.
         All choices support the designed structure and prioritize clarity.
     -->
     <style>
@@ -62,7 +64,12 @@
 <body class="bg-stone-100 text-stone-800 flex flex-col md:flex-row min-h-screen">
 
     <aside class="w-full md:w-64 bg-stone-200 p-6 shadow-lg fixed md:sticky top-0 h-screen overflow-y-auto md:flex-shrink-0 z-20">
-        <h1 class="text-2xl font-bold text-teal-700 mb-6">🌾 Agvise AI Seminar</h1>
+        <h1 class="text-2xl font-bold text-teal-700 mb-6 flex items-center justify-between">
+            <span>🌾 Agvise AI Seminar</span>
+            <a href="YOUR_PDF_DOWNLOAD_LINK_HERE" target="_blank" title="Download Seminar Handouts (PDF)" class="text-stone-500 hover:text-teal-700 transition-colors duration-200 text-xl">
+                ⬇️
+            </a>
+        </h1>
         <nav>
             <ul class="space-y-2">
                 <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="welcome">Welcome & Overview</a></li>
@@ -74,8 +81,12 @@
                 <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="challenge">Personal AI Challenge</a></li>
                 <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="tensions">Core Tensions in AI</a></li>
                 <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="wrap_up">Wrap-Up & Next Steps</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="podcast">Seminar Podcast / Audio</a></li>
             </ul>
         </nav>
+	<div class="mt-8 pt-4 border-t border-stone-300 text-center text-xs text-stone-500">
+            Site developed between the collaboration of Google Gemini and Michael Borck.
+        </div>
     </aside>
 
     <main class="flex-1 p-6 md:p-10 overflow-y-auto mt-16 md:mt-0">
@@ -416,6 +427,9 @@
                     <li>Prototype one idea next week (AI summary, blog, table analysis).</li>
                     <li>Share one working prompt with a colleague.</li>
                     <li>Bring ideas to your next team or strategy session.</li>
+                <li><a href="🌾 Agvise AI Seminar Hub.pdf" target="_blank" class="text-teal-600 hover:text-teal-800 font-semibold transition-colors duration-200">
+                        ⬇️ Download Seminar(PDF)
+                    </a></li>
                 </ul>
             </div>
              <div class="bg-white p-6 rounded-lg shadow-md mb-6">
@@ -430,6 +444,24 @@
             <div class="bg-amber-100 p-6 rounded-lg shadow-md border-l-4 border-amber-500">
                 <h3 class="text-xl font-semibold text-amber-700 mb-3">🏁 Final Takeaway</h3>
                 <p class="italic">“You don’t have to master AI today. But if you can start thinking with it — shaping questions, exploring answers, refining together — you’ve already unlocked the most powerful part of the tool.”</p>
+            </div>
+        </section>
+
+        <section id="podcast" class="content-section">
+            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">🎙️ Seminar Podcast / Audio</h2>
+            <p class="mb-4 text-lg">Listen to the seminar content on the go! Below you'll find links to the audio version of the seminar information.</p>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-stone-700 mb-3">🎧 Listen to the Seminar</h3>
+                <p class="mb-2">Click the link below to listen to the full seminar audio:</p>
+                <p>
+                    <a href="Agvise AI Productivity Seminar for Consultants.wav" target="_blank" class="text-teal-600 hover:text-teal-800 font-semibold transition-colors duration-200">
+                        🔗 Agvise AI Productivity Seminar Audio
+                    </a>
+                </p>
+                <p class="text-sm text-stone-600 mt-2">
+                    *Note: This will open the audio file in a new tab for playback.*
+                </p>
             </div>
         </section>
     </main>
