@@ -22,11 +22,11 @@ But also — the first prompt is rarely the final answer. Good prompts invite a 
 
 | Letter | Meaning         | Example                                           |
 | ------ | --------------- | ------------------------------------------------- |
-| C      | **Context**     | "This data is from a WA mixed farm over 5 years." |
-| R      | **Role**        | "You are a senior ag consultant."                 |
-| A      | **Action**      | "Summarise the financial trends."                 |
-| F      | **Format**      | "Write in bullet points."                         |
-| T      | **Tone/Target** | "Use plain English for the farm owner."           |
+| C      | **Context**     | "This data is from Curtin engineering units over 3 semesters." |
+| R      | **Role**        | "You are a senior Teaching Support Officer."                   |
+| A      | **Action**      | "Analyse enrollment trends and resource utilization."          |
+| F      | **Format**      | "Write in bullet points."                                      |
+| T      | **Tone/Target** | "Use clear language for a faculty board presentation."         |
 
 > You don’t have to use every element every time — but this gives you the scaffolding.
 
@@ -36,11 +36,11 @@ But also — the first prompt is rarely the final answer. Good prompts invite a 
 
 **Original Prompt:**
 
-> "What happened with grain yields?"
+> "What's happening with student numbers?"
 
 **Improved Prompt (with CRAFT):**
 
-> "This is yield data from a wheat and barley farm in WA over five seasons. You are an experienced farm business advisor. Summarise the yield trends and note any volatility. Output in three bullet points using plain English for the farm owner."
+> "This is enrollment data from engineering units at Curtin over three semesters. You are an experienced Teaching Support Officer. Analyse the enrollment trends and identify any units at risk of low numbers. Output in three bullet points using clear language for the faculty board."
 
 ---
 
@@ -52,9 +52,9 @@ CRAFT is a great **starting point** — but don't stop there. One-shot prompting
 
 **Example Chain:**
 
-1. Craft a CRAFT-style summary prompt
-2. Follow up: "Add any year-on-year risks you see."
-3. Follow up: "Now restructure that for a client newsletter."
+1. Craft a CRAFT-style analysis prompt
+2. Follow up: "Add any compliance risks you identify."
+3. Follow up: "Now restructure that for an executive summary."
 
 You’re not just prompting. You’re **working together.**
 
@@ -85,6 +85,6 @@ Then:
 
 ### 🏛 Key Takeaway
 
-> "CRAFT isn’t just for writing better prompts — it’s a way to start better conversations with AI. Think of it like briefing a capable colleague, not commanding a tool. It works best when you build on it turn by turn."
+> "CRAFT isn't just for writing better prompts — it's a way to start better conversations with AI. Think of it like briefing a capable Teaching Support colleague, not commanding a tool. It works best when you build on it turn by turn."
 
 

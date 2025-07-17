@@ -1,4 +1,4 @@
-site_name: Agvise AI Seminar Handouts
+site_name: TSO AI Literacy Program Handouts
 
 nav:
   - 'Welcome': 'index.md' # This points to docs/index.md
@@ -15,12 +15,12 @@ nav:
     - 'AI Unlocking Impossible Tasks': '3. Foundational Concepts & Discussion Points/AI_Unlocking_Impossible_Tasks.md'
     - 'Secure & Sustainable AI Use': '3. Foundational Concepts & Discussion Points/Secure_Sustainable_AI_Use.md'
   - '4. Worksheets & Data':
-    - 'Mock Crop Data': '4. Worksheets & Data/agvise_mock_crop_data.csv'
+    - 'Mock Unit Data': '4. Worksheets & Data/tso_mock_unit_data.csv'
     - 'Personal AI Challenge Worksheet': '4. Worksheets & Data/Personal_AI_Challenge_Worksheet.md'
   - '5. Wrap-Up':
     - 'Seminar Wrap and Key Takeaways': '5. Wrap-Up/Seminar_Wrap_and_Key_Takeways.md'
   - '6. Post-Seminar Materials':
-    - 'Evaluation & Followup Options': '6. Post-Seminar Materials/Agvise_Evaluation_Followup_Options.md'
+    - 'Evaluation & Followup Options': '6. Post-Seminar Materials/TSO_Evaluation_Followup_Options.md'
 
 theme:
   name: material # Or any other theme you prefersite_name

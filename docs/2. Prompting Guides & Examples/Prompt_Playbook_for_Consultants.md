@@ -1,4 +1,4 @@
-## 🔧 AI Prompt Playbook for Consultants
+## 🔧 AI Prompt Playbook for Teaching Support Officers
 
 **Purpose:** This playbook collects example prompts from the workshop. These are starting points — not because they are perfect, but because they help you think. Use them to prototype ideas, explore workflows, and build toward your own practice.
 
@@ -10,19 +10,19 @@ Quick, direct prompts that deliver a response in a single step.
 
 #### 🔹 Summarise a table
 
-> “You are a junior analyst. Summarise this farm production and financial table. Highlight which crop performed best each year and any concerning trends.”
+> "You are a Teaching Support Officer. Summarise this student enrollment data table. Highlight which units have capacity issues and any concerning trends in student progression."
 
 #### 🔹 Rewrite for a client
 
-> “Rewrite the summary above in plain English for a broadacre farm client. Keep it under 150 words.”
+> "Rewrite the summary above in plain English for a faculty board meeting. Keep it under 150 words and focus on actionable insights."
 
 #### 🔹 Create a LinkedIn post
 
-> “Write a short LinkedIn post that summarises this year’s performance. Highlight yields, return on capital, and lessons for other farm businesses.”
+> "Write a brief executive summary that highlights this semester's teaching support achievements. Focus on efficiency gains, compliance improvements, and student satisfaction metrics."
 
 #### 🔹 Strategy from data
 
-> “Based on this financial and production summary, provide three strategic options for the next season. Label each option and explain pros/cons.”
+> "Based on this enrollment and resource data, provide three strategic options for next semester's unit offerings. Label each option and explain impact on students and resources."
 
 #### 🔹 Debate or dual perspectives
 
@@ -57,15 +57,15 @@ Use prompts like a dialogue — AI is your thinking partner, not just a generato
 
 #### 🔹 Workflow in a single prompt (orchestration style)
 
-> “Read this dataset and market excerpt. Then: 1) Summarise trends, 2) Highlight 3 risks, 3) Suggest 3 strategic responses, 4) Draft a report paragraph. Label each step.”
+> "Read this course proposal and policy document. Then: 1) Identify compliance requirements, 2) Highlight 3 potential issues, 3) Suggest specific improvements, 4) Draft an executive summary. Label each step."
 
 #### 🔹 Format shifting
 
-> “Turn this report into a newsletter article. Then create a 3-bullet email version and a social post version.”
+> "Turn this impact analysis into a board presentation. Then create a 3-bullet email summary for staff and a brief update for the student portal."
 
 ---
 
-# 🧠 CRAFT Prompt Patterns for Agricultural Consultants
+# 🧠 CRAFT Prompt Patterns for Teaching Support Officers
 *Use in Copilot, ChatGPT, Claude, Gemini, and other AI tools*
 
 ## 📋 CRAFT Formula
@@ -74,7 +74,7 @@ Use prompts like a dialogue — AI is your thinking partner, not just a generato
 
 #### 🔹 Full CRAFT prompt
 
-> “This data is from a mixed cropping farm in WA across five seasons. You are a senior farm business advisor. Summarise trends in crop performance, focusing on gross margin and risk. Output in bullet points for an internal strategy document.”
+> "This data is from Curtin's engineering faculty across three semesters. You are a senior Teaching Support Officer. Summarise trends in unit delivery, focusing on resource utilization and student outcomes. Output in bullet points for a faculty planning document."
 
 #### 🔹 CRAFT follow-up chain
 
@@ -87,31 +87,31 @@ Use prompts like a dialogue — AI is your thinking partner, not just a generato
 
 ## 📊 Summarise a Table
 
-> “This table contains KPIs for a client’s mixed farm.  
-> You are a senior agricultural consultant.  
+> "This table contains unit performance metrics for the science faculty.  
+> You are a senior Teaching Support Officer.  
 > Analyse key trends and anomalies.  
 > Use bullet points.  
-> Focus on margin, yield, and costs.”
+> Focus on enrollment, completion rates, and resource allocation."
 
 ---
 
 ## 📝 Turn Data into Narrative
 
-> “These KPIs come from a WA broadacre farm.  
-> You are writing a report.  
-> Summarise performance and suggest one improvement.  
+> "These metrics come from Curtin's business school units.  
+> You are writing a compliance report.  
+> Summarise performance against TEQSA standards and suggest one improvement.  
 > Format as a paragraph.  
-> Focus on production and finance.”
+> Focus on student outcomes and teaching quality."
 
 ---
 
 ## 🎯 Strategy Options
 
-> “Assume low rainfall next year.  
-> You are a farm advisor.  
-> Suggest 3 strategic options with pros/cons and risk levels.  
+> "Assume 15% budget reduction next year.  
+> You are a Teaching Support Officer.  
+> Suggest 3 strategic options for maintaining teaching quality with pros/cons and risk levels.  
 > Use a structured list.  
-> Focus on grain, inputs, and capital.”
+> Focus on unit consolidation, delivery modes, and staff allocation."
 
 ---
 
@@ -119,7 +119,7 @@ Use prompts like a dialogue — AI is your thinking partner, not just a generato
 
 - “Use plain English”  
 - “Add chart suggestions”  
-- “Make it sound like advice from a trusted consultant”
+- "Make it sound like advice from an experienced Teaching Support Officer"
 
 ---
 
@@ -129,7 +129,7 @@ Use prompts like a dialogue — AI is your thinking partner, not just a generato
 | ---------------------- | ------------------------------------ | -------------------------------- |
 | **CRAFT structure**    | Structured, role-based prompting     | Clean first drafts               |
 | **Prompt + Follow-up** | Iterative refinement                 | Tone, structure, scope changes   |
-| **Multi-role prompts** | Simulate internal/external voices    | Analyst vs. Client vs. Editor    |
+| **Multi-role prompts** | Simulate internal/external voices    | TSO vs. Faculty vs. Students     |
 | **Reverse prompting**  | Start from goal, build backwards     | "What prompt would create this?" |
 | **Template prompts**   | Structured sections with constraints | Risk → Strategy → Outcome        |
 
@@ -137,9 +137,9 @@ Use prompts like a dialogue — AI is your thinking partner, not just a generato
 
 ### 🔍 Reflection Prompts
 
-> “What’s one part of your job that AI could help with, but you haven’t tried yet?”
-> “If you had a digital junior analyst, what would you train it to do first?”
-> “What’s a question you ask clients that AI might help explore before the meeting?”
+> "What's one part of your TSO role that AI could help with, but you haven't tried yet?"
+> "If you had a digital teaching support assistant, what would you train it to do first?"
+> "What's a compliance check or data analysis that AI could prepare before faculty meetings?"
 
 ---
 

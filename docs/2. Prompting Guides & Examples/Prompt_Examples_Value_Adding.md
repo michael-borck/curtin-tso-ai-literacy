@@ -1,69 +1,75 @@
-# 📊 From Report to Results: Value-Adding AI Prompts for Consultants
+# 📊 From Data to Decisions: Value-Adding AI Prompts for Teaching Support Officers
 
-*Using the Agvise 2024 Annual Review Report as Input Material*  
-These prompts demonstrate how AI can assist in **reframing, reusing, and repackaging your hard work** — not just automating, but **adding value**.
+*Using Unit Performance and Student Data as Input Material*  
+These prompts demonstrate how AI can assist in **analyzing, compliance checking, and strategic planning** — not just automating, but **adding strategic value**.
 
 ---
 
-## 🧠 Summary Use Case: "Act Like a Junior Analyst"
+## 🧠 Summary Use Case: "Act Like a Teaching Support Analyst"
 
 ### Prompt
-> "Summarise the key insights from this annual farm business review. Use plain English. Focus on production, financials, and risk outcomes."
+> "Summarise the key insights from this semester's unit performance data. Use plain English. Focus on enrollment trends, student outcomes, and resource utilization."
 
 ### Output
 - Executive summary in bullet points
-- Performance highlights and risks
-- Narrative overview for a client
+- Performance highlights and areas of concern
+- Narrative overview for faculty board
 
 ### Use Case
-- Draft intro for reports or presentations
-- Client briefings
+- Draft intro for faculty meetings
+- Board presentations
+- Strategic planning sessions
 
 ---
 
-## 📰 Marketing Use Case: Newsletter or Blog Post
+## 📰 Communication Use Case: Faculty Update or Student Portal
 
 ### Prompt
-> "Turn this report into a newsletter article for farm business owners. Highlight strong grain yields, cashflow recovery, and return on capital. Use a professional and optimistic tone."
+> "Turn this unit analysis into a faculty newsletter update. Highlight successful teaching innovations, improved student satisfaction, and resource efficiency gains. Use a professional and positive tone."
 
 ### Output
-- Clear, structured article (intro, sections, summary)
-- Optional calls to action or future outlook
+- Clear, structured update (intro, achievements, next steps)
+- Key metrics and improvements
+- Future initiatives
 
 ### Use Case
-- Mailchimp campaigns
-- Website blog post
-- Post-season wrap-up for clients
+- Faculty newsletters
+- Student portal updates
+- Semester wrap-up communications
 
 ---
 
-## 💼 Thought Leadership: LinkedIn Post
+## 💼 Executive Summary: Board Presentation
 
 ### Prompt
-> "Write a short LinkedIn post summarising this 2023 farm report. Focus on ROI, yield, and forward planning. Make it professional and client-facing."
+> "Write a brief executive summary of this semester's teaching support achievements. Focus on compliance improvements, efficiency gains, and student success metrics. Make it professional and board-ready."
 
 ### Output
-- 2–3 sentence summary
-- Add hashtags or tag @Agvise if needed
+- 2–3 paragraph summary
+- Key metrics and achievements
+- Strategic recommendations
 
 ### Use Case
-- Public-facing updates
-- Personal branding for consultants
+- Board presentations
+- Executive briefings
+- Annual reports
 
 ---
 
-## 🎯 Strategy Use Case: Lessons Learned
+## 🎯 Strategy Use Case: Best Practices Identification
 
 ### Prompt
-> "From this report, extract 3 lessons other farms could learn from this client’s performance and decision-making in 2023."
+> "From this unit performance data, extract 3 best practices that could be applied across other faculties to improve student outcomes and teaching efficiency."
 
 ### Output
-- Bullet list with takeaways
-- Could be expanded into a presentation
+- Bullet list with actionable insights
+- Implementation recommendations
+- Success metrics
 
 ### Use Case
-- Training workshops
-- Internal case study generation
+- Cross-faculty workshops
+- Best practice documentation
+- Strategic planning initiatives
 
 ---
 
@@ -71,10 +77,10 @@ These prompts demonstrate how AI can assist in **reframing, reusing, and repacka
 
 Instead of rewriting manually, try:
 
-- “Turn this paragraph into a PowerPoint slide.”  
-- “Reword this report section for a client with limited financial knowledge.”  
-- “Create a tweet thread based on this annual review.”
+- "Turn this compliance analysis into a PowerPoint slide for the board."  
+- "Reword this technical report section for new Teaching Support staff."  
+- "Create a brief update for the student portal based on these changes."
 
 ---
 
-> 🧠 **Key Message**: AI doesn't just reduce your work — it multiplies the *value* of the work you’ve already done.
+> 🧠 **Key Message**: AI doesn't just reduce your workload — it enhances the *strategic impact* of your teaching support role.
