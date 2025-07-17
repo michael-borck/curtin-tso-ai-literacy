@@ -40,10 +40,12 @@ This interactive hub provides all the materials for the "AI Literacy and Capabil
 
 To get the most out of this session, please ensure you have:
 
-- ✅ Microsoft 365 (Office 365) account
-- ✅ Google Account (personal or work)
+- ✅ Microsoft 365 (Office 365) account with Copilot access
 - ✅ A laptop or suitable computing device
-- 🧠 Optional: Access to other LLM tools (e.g., ChatGPT, Claude, Gemini)
+- 📝 Note: Microsoft Copilot is our primary AI tool for university work
+- 🧠 For personal exploration only: ChatGPT, Claude, or other AI tools (not for university data)
+
+**Important:** Only Microsoft Copilot is approved for use with university data. Other AI tools mentioned in this workshop are for personal learning and experimentation with mock data only.
 
 ---
 
@@ -63,28 +65,33 @@ Guiding Questions for this section:
 1. How can we automate what we already do?
 2. What could we never do — until now?
 
-### 🧪 Live Demo Examples (Conceptual)
+### 🧪 Live Demo Examples with Microsoft Copilot
 
-We'll work with mock university data and policy excerpts. Tools: Copilot Chat, ChatGPT, Claude, or Gemini.
+We'll work with mock university data and policy excerpts using Microsoft Copilot in Excel and Word.
 
-#### DEMO 1: Smart Business Case Generator
-- **Initial Prompt:** "You are a Teaching Support Officer writing a business case for a new course. The proposal is in my rough notes. Draft a formal business case, ensuring it addresses all requirements outlined in Curtin's course approval policy and TEQSA guidelines."
-- **Follow-Up Prompt:** "Now, flag any potential compliance gaps and suggest specific wording to ensure the document is ready for the faculty board."
-- 📌 **Highlight:** This demonstrates immediate time savings and a direct link to the 'Quick Win' pilot project.
+#### DEMO 1: Excel Formula Assistance with Copilot
+- **Scenario:** You have a complex spreadsheet with broken formulas for calculating student load and resource allocation.
+- **Initial Prompt:** Copy the broken formula and ask Copilot: "What's wrong with this formula and how can I fix it?"
+- **Follow-Up Prompt:** "Generate a formula that calculates the weighted average of student satisfaction scores across multiple units, excluding any blank cells."
+- 📌 **Highlight:** This saves hours of debugging and formula documentation searching - a real TSO pain point!
 
-#### DEMO 2: Intelligent Impact Analysis
-- **Prompt:** "The faculty is proposing to retire units X, Y, and Z. Using the provided (mock) student enrollment data, analyze which student cohorts are affected, suggest alternative pathways, and generate a summary table and chart for a board meeting."
-- **Variation Prompt:** "Now create a risk assessment highlighting any students who might not graduate on time due to these changes."
-- 📌 **Highlight:** This showcases the 'Strategic Win' and positions AI as a tool for more informed decision-making.
+#### DEMO 2: Spreadsheet Analysis with Copilot
+- **Scenario:** Analyze the `tso_mock_unit_data.csv` to identify trends without manual formula writing.
+- **Prompt:** "Analyze this enrollment data and identify which units are at risk of low numbers. Create a summary table showing units with declining enrollment over 3 semesters."
+- **Follow-Up:** "Generate a chart showing enrollment trends and highlight units that need intervention."
+- 📌 **Highlight:** Transform raw data into actionable insights in minutes, not hours.
 
-#### DEMO 3: Automated Data Workflow
-- **Prompt:** "I have received three separate emails with semester availability for ENGR1001, PHYS2002, and MATH101. Extract the key information (unit, semester, tutorial count, quota) and consolidate it into a single table. Flag any potential timetable conflicts."
-- **Follow-Up:** "Generate a formatted report for the timetabling committee with recommendations for conflict resolution."
-- 📌 **Highlight:** This addresses the 'Operational Win' and demonstrates how AI can reduce the stress of manual data collection.
+#### DEMO 3: Smart Business Case Generator in Word
+- **Scenario:** Using Copilot in Word to draft compliance-ready documents.
+- **Prompt:** "Draft a business case for a new engineering unit. Include sections for: market demand, resource requirements, TEQSA compliance, and risk assessment. Use formal academic language suitable for faculty board approval."
+- **Follow-Up:** "Review this draft and ensure it addresses all requirements in Curtin's course approval policy. Flag any missing elements."
+- 📌 **Highlight:** From rough notes to board-ready document in minutes.
 
-#### DEMO 4: Compliance Checking Workflow
-- **Single Orchestration Prompt:** "Review this course proposal against Curtin's policies. Then: 1) identify compliance requirements, 2) highlight any gaps, 3) suggest specific improvements, and 4) draft an executive summary. Label each step."
-- 📌 **Highlight:** Single prompt → comprehensive compliance review (agent-like behavior).
+#### DEMO 4: Future Possibility - Course Accreditation Analysis
+- **Note:** This demonstrates what could be possible with Libre Chat (pending IT approval).
+- **Conceptual Use Case:** "Upload course accreditation documents and ask: What are the key requirements for maintaining Engineers Australia accreditation for this program?"
+- **Potential Value:** Query complex policy documents instantly instead of manual searching.
+- 📌 **Highlight:** This is a future possibility pending security review by Brenton and Matt.
 
 ### 📊 Mock Unit Data Sample
 
@@ -95,12 +102,13 @@ We'll work with mock university data and policy excerpts. Tools: Copilot Chat, C
 | 2024 S1 | MATH101 | 420 | 400 | 85% | Over capacity |
 | 2024 S1 | COMP3001 | 98 | 150 | 94% | Under-utilized |
 
-### 🛠 Optional Prompt Enhancers
+### 🛠 Copilot Prompt Enhancers
 
-- "Use clear language suitable for faculty board presentations."
-- "Structure as an executive summary with actionable recommendations."
-- "Include compliance references to TEQSA standards."
-- "Write like an experienced Teaching Support Officer."
+- "Fix this Excel formula and explain what was wrong."
+- "Create a pivot table summarizing enrollment by faculty."
+- "Generate a VLOOKUP formula to match student IDs with completion rates."
+- "Draft this in formal academic language suitable for board review."
+- "Check this document against university policy requirements."
 
 ### 💬 Discussion Prompt
 
@@ -117,7 +125,7 @@ Learn how to write better prompts that yield more relevant, high-quality AI resp
 
 - Most disappointing AI results are due to vague or context-free prompts
 - Structured prompts produce better outputs with less rework
-- Good prompting is platform-agnostic: it works in ChatGPT, Copilot, Gemini, Claude, etc.
+- Good prompting principles work across all AI tools, but we'll focus on Microsoft Copilot for university work
 
 *"Think of prompting like a briefing: the better you brief the AI, the better its draft. But also — the first prompt is rarely the final answer. Good prompts invite a conversation, not just a command."*
 
@@ -141,16 +149,16 @@ Learn how to write better prompts that yield more relevant, high-quality AI resp
 **Improved Prompt (with CRAFT):**
 > "This is enrollment data from engineering units at Curtin over three semesters. You are an experienced Teaching Support Officer. Analyse the enrollment trends and identify any units at risk of low numbers. Output in three bullet points using clear language for the faculty board."
 
-### 🗣️ Prompting as a Conversation
+### 🗣️ Prompting as a Conversation with Copilot
 
-"CRAFT is a great starting point — but don't stop there. One-shot prompting can feel transactional. The real power is in using AI as a collaborator."
+"CRAFT is a great starting point — but don't stop there. One-shot prompting can feel transactional. The real power is in using Copilot as a collaborator."
 
-*"Think of CRAFT as your first message to a new colleague. The next steps are to discuss, clarify, iterate."*
+*"Think of CRAFT as your first message to Copilot. The next steps are to discuss, clarify, iterate."*
 
-**Example Chain:**
-1. Craft a CRAFT-style analysis prompt
-2. Follow up: "Add any compliance risks you identify."
-3. Follow up: "Now restructure that for an executive summary."
+**Example Chain in Copilot:**
+1. Craft a CRAFT-style analysis prompt in Excel
+2. Follow up: "Add any units at risk of cancellation."
+3. Follow up: "Now create a chart to visualize this data."
 
 ---
 
@@ -160,64 +168,68 @@ Explore a collection of prompt patterns, techniques, and examples to enhance you
 
 ### 🔧 AI Prompt Playbook for Teaching Support Officers
 
-#### ✨ One-Shot Prompt Starters
+#### ✨ One-Shot Prompt Starters for Copilot
 
-**🔹 Summarise a table**
-> "You are a Teaching Support Officer. Summarise this student enrollment data table. Highlight which units have capacity issues and any concerning trends in student progression."
+**🔹 Summarise a table (Excel with Copilot)**
+> "Analyze this student enrollment data and highlight which units have capacity issues and any concerning trends in student progression. Create a summary table."
 
-**🔹 Rewrite for faculty**
-> "Rewrite the summary above in plain English for a faculty board meeting. Keep it under 150 words and focus on actionable insights."
+**🔹 Rewrite for faculty (Word with Copilot)**
+> "Rewrite this unit performance summary for a faculty board meeting. Keep it under 150 words and focus on actionable insights. Use formal academic language."
 
-**🔹 Create an executive summary**
-> "Write a brief executive summary that highlights this semester's teaching support achievements. Focus on efficiency gains, compliance improvements, and student satisfaction metrics."
+**🔹 Create an executive summary (Word with Copilot)**
+> "Draft an executive summary of this semester's teaching support achievements. Include sections for efficiency gains, compliance improvements, and student satisfaction metrics. Format with clear headings."
 
-**🔹 Strategy from data**
-> "Based on this enrollment and resource data, provide three strategic options for next semester's unit offerings. Label each option and explain impact on students and resources."
+**🔹 Strategy from data (Excel with Copilot)**
+> "Based on this enrollment and resource data, identify three strategic options for next semester's unit offerings. Create a table showing each option with pros, cons, and resource impact."
 
-### 📊 From Data to Decisions: Value-Adding AI Prompts
+### 📊 From Data to Decisions: Value-Adding Copilot Prompts
 
-**🧠 Summary Use Case: "Act Like a Teaching Support Analyst"**
-> "Summarise the key insights from this semester's unit performance data. Use plain English. Focus on enrollment trends, student outcomes, and resource utilization."
+**🧠 Summary Use Case: Teaching Support Analysis (Excel with Copilot)**
+> "Analyze the unit performance data in this spreadsheet. Create a summary focusing on enrollment trends, student outcomes, and resource utilization. Add a chart showing key metrics."
 
-**📰 Communication Use Case: Faculty Update**
-> "Turn this unit analysis into a faculty newsletter update. Highlight successful teaching innovations, improved student satisfaction, and resource efficiency gains. Use a professional and positive tone."
+**📰 Communication Use Case: Faculty Update (Word with Copilot)**
+> "Using this unit analysis data, draft a faculty newsletter update. Include sections on teaching innovations, student satisfaction improvements, and resource efficiency. Use professional language with a positive tone."
 
-**💼 Executive Summary: Board Presentation**
-> "Write a brief executive summary of this semester's teaching support achievements. Focus on compliance improvements, efficiency gains, and student success metrics. Make it professional and board-ready."
+**💼 Executive Summary: Board Presentation (Word with Copilot)**
+> "Create an executive summary document for the board based on this semester's data. Structure it with: 1) Key achievements, 2) Compliance status, 3) Efficiency metrics, 2) Student success indicators. Use formal academic language."
 
-**🎯 Strategy Use Case: Best Practices Identification**
-> "From this unit performance data, extract 3 best practices that could be applied across other faculties to improve student outcomes and teaching efficiency."
+**🎯 Strategy Use Case: Best Practices (Excel with Copilot)**
+> "Analyze this unit performance data and identify the top 3 performing units. Create a table showing what makes them successful and how these practices could benefit other faculties."
 
-### ⚙️ Multi-Turn Prompt Chains
+### ⚙️ Multi-Turn Prompt Chains with Copilot
 
-**🔹 Workflow in a single prompt (orchestration style)**
-> "Read this course proposal and policy document. Then: 1) Identify compliance requirements, 2) Highlight 3 potential issues, 3) Suggest specific improvements, 4) Draft an executive summary. Label each step."
+**🔹 Document Analysis Workflow (Word with Copilot)**
+> First prompt: "Analyze this course proposal and identify key compliance requirements based on TEQSA standards."
+> Follow-up: "Now highlight 3 potential compliance risks and suggest improvements for each."
+> Final: "Create an executive summary of the analysis with clear recommendations."
 
-**🔹 Format shifting**
-> "Turn this impact analysis into a board presentation. Then create a 3-bullet email summary for staff and a brief update for the student portal."
+**🔹 Format Shifting (Word/Outlook with Copilot)**
+> First prompt: "Summarize this impact analysis report into 5 key points for the board."
+> Follow-up: "Now draft an email to faculty staff with the same information but in a more conversational tone."
+> Final: "Create a brief 2-paragraph update for the student portal focusing on positive outcomes."
 
-### 🧠 CRAFT Prompt Patterns for TSOs
+### 🧠 CRAFT Prompt Patterns for TSOs with Copilot
 
-**📊 Summarise a Table**
-> "This table contains unit performance metrics for the science faculty.  
-> You are a senior Teaching Support Officer.  
-> Analyse key trends and anomalies.  
-> Use bullet points.  
-> Focus on enrollment, completion rates, and resource allocation."
+**📊 Summarise a Table (Excel with Copilot)**
+> "Context: This spreadsheet contains unit performance metrics for the science faculty from semester 1.  
+> Role: Analyze as a senior Teaching Support Officer would.  
+> Action: Identify key trends and anomalies in the data.  
+> Format: Create a summary table with bullet points for each finding.  
+> Target: Focus on enrollment patterns, completion rates, and resource utilization."
 
-**📝 Turn Data into Narrative**
-> "These metrics come from Curtin's business school units.  
-> You are writing a compliance report.  
-> Summarise performance against TEQSA standards and suggest one improvement.  
-> Format as a paragraph.  
-> Focus on student outcomes and teaching quality."
+**📝 Turn Data into Narrative (Word with Copilot)**
+> "Context: These are business school unit metrics for TEQSA compliance review.  
+> Role: Write as a Teaching Support Officer preparing documentation.  
+> Action: Analyze performance against key quality indicators and identify areas for improvement.  
+> Format: Draft a formal paragraph suitable for compliance documentation.  
+> Target: Emphasize student success outcomes and teaching quality metrics."
 
-**🎯 Strategy Options**
-> "Assume 15% budget reduction next year.  
-> You are a Teaching Support Officer.  
-> Suggest 3 strategic options for maintaining teaching quality with pros/cons and risk levels.  
-> Use a structured list.  
-> Focus on unit consolidation, delivery modes, and staff allocation."
+**🎯 Strategy Options (Excel/Word with Copilot)**
+> "Context: Our faculty faces a 15% budget reduction for next academic year.  
+> Role: Provide analysis as an experienced Teaching Support Officer.  
+> Action: Develop 3 strategic scenarios for maintaining teaching quality despite budget cuts.  
+> Format: Create a comparison table showing each option with advantages, risks, and resource implications.  
+> Target: Consider unit consolidation, online delivery expansion, and staffing optimization."
 
 ---
 
@@ -227,7 +239,7 @@ This section helps us see beyond automation to how AI can expand our capabilitie
 
 ### 💡 Framing Statement
 
-*"So far, we've looked at how to automate what you already do. Now let's ask a better question: — What have you never been able to do because it felt too hard, too slow, or too expensive? AI may now make those things possible."*
+*"So far, we've looked at how to automate what you already do with Copilot. Now let's explore what becomes possible when we think bigger - both with tools available today and secure solutions on the horizon."*
 
 ### 🧠 Examples of "Impossible" Tasks AI Can Now Tackle
 
@@ -235,20 +247,20 @@ This section helps us see beyond automation to how AI can expand our capabilitie
 |-----------|---------------------------|---------------------|
 | Policy synthesis | Reading & comparing multiple TEQSA documents | Summarise and extract requirements instantly |
 | Report repurposing | Turning 1 analysis into multiple formats | Reformat for board, faculty, or students |
-| Internal Q&A | Answering policy questions on demand | Query university docs via NotebookLM |
+| Internal Q&A | Answering policy questions on demand | Query university docs via secure tools |
 | Impact modeling | Manual analysis of course changes | AI-driven scenario exploration |
 | Compliance checking | Line-by-line policy verification | Automated compliance gap analysis |
 
-### 🤖 NotebookLM: AI That Knows Your Documents
+### 🤖 Future Possibility: Secure Document Q&A with Libre Chat
 
-NotebookLM is Google's AI notebook that reads and cites *your* content. Upload policies, procedures, TEQSA guidelines, and query them. It's great for internal insights, onboarding, and compliance checking.
+While we currently use Copilot for our AI needs, we're exploring the potential of Libre Chat - a secure platform that could allow us to upload and query internal documents like policies, procedures, and TEQSA guidelines.
 
-**Use Cases for Teaching Support Officers:**
+**Potential Use Cases (Pending IT Approval):**
 - Ask: "What are the requirements for course accreditation at Curtin?"
-- Summarise changes in TEQSA guidelines over recent years
-- New TSO staff can query policies without interrupting experienced colleagues
+- Query complex policy documents without manual searching
+- Support new TSO staff with instant access to institutional knowledge
 
-**Limitations:** Not suitable for student-sensitive content (yet). Still in beta — best used for internal knowledge reuse.
+**Current Status:** Under security review by IT team (Brenton and Matt). This represents the future of secure, internal AI tools that respect data governance while enhancing productivity.
 
 ### 🧠 Discussion Prompt
 
@@ -307,10 +319,11 @@ Grounding our AI exploration in responsible use is crucial. This section covers 
 
 | Tool | Use Case | Governance Notes |
 |------|----------|------------------|
-| **ChatGPT** | Rapid prototyping, testing prompts | ❌ No student data. Treat like a public whiteboard. |
-| **Copilot Chat** | Secure drafting in M365 | ✅ Safe for internal docs. Respects your permissions. |
-| **Gemini** | Research, document analysis | ⚠️ Check data sharing policies. Not for confidential input. |
-| **Claude** | Long context reasoning | ❌ Same privacy limits as ChatGPT. Use mock data only. |
+| **Copilot (M365)** | Primary tool for university work | ✅ APPROVED for internal docs and student data. Educational license. |
+| **ChatGPT** | Personal exploration only | ❌ NOT for university data. Personal learning with mock data only. |
+| **Claude** | Personal exploration only | ❌ NOT for university data. Personal learning with mock data only. |
+| **Gemini** | Personal exploration only | ❌ NOT for university data. Personal learning with mock data only. |
+| **Libre Chat** | Future possibility | 🔄 Under review by IT (Brenton/Matt). Not yet approved. |
 
 ### 🚶 What to Say if Asked: "Can we use this for real student data?"
 
@@ -324,10 +337,10 @@ Apply what you've learned to a personal, meaningful task. This is a space for ex
 
 ### 📝 Worksheet Prompts
 
-1. What's the task or challenge you're exploring? (e.g., Automating business case templates, analyzing unit performance data)
+1. What's the task or challenge you're exploring? (e.g., Automating business case templates in Word, analyzing unit performance data in Excel)
 2. What do you currently do?
 3. Draft your CRAFT prompt for this task.
-4. Which tool would you try? (☐ Copilot ☐ ChatGPT ☐ Claude ☐ NotebookLM ☐ Not sure)
+4. Which tool would you try? (☐ Copilot (recommended for university work) ☐ ChatGPT (personal exploration only) ☐ Other)
 5. What would success look like for this task?
 6. **Reflection:** Surprised by the output? Would you use it again? Where might it fit in your workflow?
 
@@ -395,30 +408,33 @@ Concluding the program with clarity, confidence, and practical next steps to int
 
 ### 🚀 Follow-Up Options
 
-#### 🔁 1. *Quick Win Implementation* Workshop (July 2025)
+#### 🔁 1. *Copilot Quick Win* Workshop (July 2025)
 
-> Implement the **Smart Business Case Generator** pilot project
+> Master **Microsoft Copilot for TSO Excellence**
 
-* Build automated templates for course proposals
-* Integrate TEQSA compliance checking
-* Test with real TSO workflows using secure data
+* Advanced Excel formula assistance and data analysis with Copilot
+* Automate business case generation in Word with Copilot
+* Build TSO-specific prompt templates for common tasks
+* Hands-on practice with real TSO scenarios (using secure data)
 
-#### 🛠 2. Strategic Win Development Session (August 2025)
+#### 🛠 2. Scoping an Intelligent Accreditation Hub (August 2025)
 
-> Develop the **Intelligent Impact Analysis** tools
+> Explore **Libre Chat for Policy & Accreditation Management**
 
-* Map current manual impact assessment processes
-* Build AI-assisted analysis workflows
-* Create templates for board presentations
+* Work with Brenton and Matt to assess Libre Chat security
+* Design secure document upload and query workflows
+* Pilot accreditation document Q&A system
+* Develop governance protocols for AI-assisted compliance
 
-#### 📚 3. TSO AI Toolkit Documentation (September 2025)
+#### 📚 3. TSO Copilot Excellence Toolkit (September 2025)
 
-> Create comprehensive TSO-specific AI resources:
+> Create comprehensive Microsoft Copilot resources for TSOs:
 
-* Validated prompts for common TSO tasks
-* Integration guides for Curtin systems
-* Best practices aligned with university policies
-* Success metrics and case studies
+* Validated Copilot prompts for Excel, Word, and Teams
+* TSO-specific templates and workflows
+* Integration guides for Curtin's M365 environment
+* Copilot best practices aligned with university policies
+* Success metrics and TSO case studies
 
 ### 💬 Feedback & Next Steps
 

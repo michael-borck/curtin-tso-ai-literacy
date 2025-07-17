@@ -34,7 +34,7 @@ Ground the seminar in responsible use. Provide participants with confidence abou
    Unless you *know* the tool offers enterprise privacy, don't paste student-identifiable or sensitive university information.
 
 3. **Use your secure platforms for sensitive work**
-   Copilot inside Microsoft 365 is enterprise-grade: your data stays in your tenant and isn't used to train models.
+   Copilot inside Microsoft 365 is the ONLY approved tool for university data. Your data stays in your tenant and isn't used to train models.
 
 4. **Prototype in chat tools, deploy in secure environments**
    Test prompts with mock data in ChatGPT, then migrate your workflow to secure Copilot or approved university systems.
@@ -82,10 +82,11 @@ Ground the seminar in responsible use. Provide participants with confidence abou
 
 | Tool             | Use Case                     | Governance Notes                                                    |
 | ---------------- | ---------------------------- | ------------------------------------------------------------------- |
-| **ChatGPT**      | Rapid prototyping, summaries | ❌ No client data. Treat like a public whiteboard.                   |
-| **Copilot Chat** | Secure drafting in M365      | ✅ Safe for internal docs. Respects your permissions.                |
-| **Gemini**       | Research, document analysis  | ⚠️ Check what is shared via APIs. Not built for confidential input. |
-| **Claude**       | Long context reasoning       | ❌ Same privacy limits as ChatGPT. Use mock data only.               |
+| **Copilot (M365)**| Primary tool for university work | ✅ APPROVED for internal docs and student data. Educational license. |
+| **ChatGPT**      | Personal exploration only    | ❌ NOT for university data. Personal learning with mock data only.   |
+| **Claude**       | Personal exploration only    | ❌ NOT for university data. Personal learning with mock data only.   |
+| **Gemini**       | Personal exploration only    | ❌ NOT for university data. Personal learning with mock data only.   |
+| **Libre Chat**   | Future possibility           | 🔄 Under review by IT (Brenton/Matt). Not yet approved.            |
 
 ---
 
@@ -105,5 +106,5 @@ Ground the seminar in responsible use. Provide participants with confidence abou
 
 ## 🏛 Key Takeaway
 
-> “AI is only as smart as your context — and only as safe as your systems. Work with it like a colleague: trust it, but verify, and never put it in a position to break the rules.”
+> "AI is only as smart as your context — and only as safe as your systems. Microsoft Copilot is our approved tool for university work. Other AI tools are for personal exploration only."
 

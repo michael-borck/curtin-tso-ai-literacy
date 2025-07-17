@@ -17,13 +17,15 @@
 
 ### **Pre-Seminar Checklist:**
 
--   Confirm all participants have a **Microsoft 365 (Office 365)** account and a **Google Account**.
+-   Confirm all participants have a **Microsoft 365 (Office 365)** account with **Copilot access**.
     
 -   Ensure access to a **laptop or suitable computing device** for each participant.
     
 -   Have `tso_mock_unit_data.csv` readily available for demos.
     
--   Familiarize yourself with the latest versions of Copilot (Word/Excel web), ChatGPT, Claude, Gemini, and NotebookLM.
+-   Familiarize yourself with the latest version of **Microsoft Copilot** in Word and Excel.
+    
+-   **Important:** Only Copilot is approved for university data. Other AI tools (ChatGPT, Claude, etc.) are for personal exploration only.
     
 -   Print/prepare handouts:
     
@@ -107,7 +109,9 @@
     
     -   Ensure you have `tso_mock_unit_data.csv` ready.
         
-    -   Have your chosen LLM (Copilot Chat in Word/Excel web is ideal for relevance, otherwise ChatGPT/Claude/Gemini) open and ready.
+    -   Have Microsoft Copilot ready in both Excel and Word.
+        
+    -   Prepare a broken Excel formula example for Demo 1.
         
     -   _Remind participants that these are mock data examples to demonstrate functionality, not real student data._
         
@@ -119,51 +123,57 @@
         
 -   **Demo Walkthrough (follow prompts from `tso_automate_the_tedious_full.md`):**
     
-    -   **✅ DEMO 1: Smart Business Case Generator**
+    -   **✅ DEMO 1: Excel Formula Assistance with Copilot**
         
-        -   _Open `tso_mock_unit_data.csv` (or paste its content into the LLM if using a general chat tool)._
+        -   _This demonstrates how Copilot can save hours debugging formulas._
             
-        -   **Prompt 1:** "You are a Teaching Support Officer writing a business case for a new course. The proposal is in my rough notes. Draft a formal business case, ensuring it addresses all requirements outlined in Curtin's course approval policy and TEQSA guidelines."
+        -   **Setup:** Open Excel with a broken formula for calculating student load (prepare example: =SUMIF(A:A,">100",B:B)/COUNTIF(C:C,""))
             
-        -   _Discuss the initial output – what's good, what could be better?_
+        -   **Initial Prompt:** Copy the broken formula and ask Copilot: "What's wrong with this formula and how can I fix it?"
             
-        -   **Follow-Up Prompt:** "Now, flag any potential compliance gaps and suggest specific wording to ensure the document is ready for the faculty board."
+        -   _Show how Copilot identifies the error (COUNTIF with empty criteria) and provides the corrected formula._
             
-        -   **📌 Highlight:** This demonstrates immediate time savings and a direct link to the 'Quick Win' pilot project.
+        -   **Follow-Up Prompt:** "Generate a formula that calculates the weighted average of student satisfaction scores across multiple units, excluding any blank cells."
             
-    -   **✅ DEMO 2: Intelligent Impact Analysis**
+        -   **📌 Highlight:** This saves hours of debugging and formula documentation searching - a real TSO pain point!
+            
+    -   **✅ DEMO 2: Spreadsheet Analysis with Copilot**
         
-        -   _Take the unit data from Demo 1._
+        -   _Use the `tso_mock_unit_data.csv` for analysis._
             
-        -   **Prompt:** "The faculty is proposing to retire units X, Y, and Z. Using the provided (mock) student enrollment data, analyze which student cohorts are affected, suggest alternative pathways, and generate a summary table and chart for a board meeting."
+        -   **Setup:** Open the CSV in Excel with Copilot.
             
-        -   _Discuss the output._
+        -   **Prompt:** "Analyze this enrollment data and identify which units are at risk of low numbers. Create a summary table showing units with declining enrollment over 3 semesters."
             
-        -   **Variation Prompt (don't execute, just mention):** "Now create a risk assessment highlighting any students who might not graduate on time due to these changes."
+        -   _Show how Copilot analyzes the data and creates insights._
             
-        -   **📌 Highlight:** This showcases the 'Strategic Win' and positions AI as a tool for more informed decision-making.
+        -   **Follow-Up:** "Generate a chart showing enrollment trends and highlight units that need intervention."
             
-    -   **✅ DEMO 3: Automated Data Workflow**
+        -   **📌 Highlight:** Transform raw data into actionable insights in minutes, not hours.
+            
+    -   **✅ DEMO 3: Smart Business Case Generator in Word**
         
-        -   _This demonstrates consolidating data from multiple sources._
+        -   _Using Copilot in Word to draft compliance-ready documents._
             
-        -   **Prompt:** "I have received three separate emails with semester availability for ENGR1001, PHYS2002, and MATH101. Extract the key information (unit, semester, tutorial count, quota) and consolidate it into a single table. Flag any potential timetable conflicts."
+        -   **Setup:** Open Word with Copilot and some rough notes about a new engineering unit proposal.
             
-        -   _Discuss the output - how it saves time on manual data collection._
+        -   **Prompt:** "Draft a business case for a new engineering unit. Include sections for: market demand, resource requirements, TEQSA compliance, and risk assessment. Use formal academic language suitable for faculty board approval."
             
-        -   **Follow-Up:** "Generate a formatted report for the timetabling committee with recommendations for conflict resolution."
+        -   _Show how Copilot creates a structured document._
+            
+        -   **Follow-Up:** "Review this draft and ensure it addresses all requirements in Curtin's course approval policy. Flag any missing elements."
                 
-        -   **📌 Highlight:** This addresses the 'Operational Win' and demonstrates how AI can reduce the stress of manual data collection.
+        -   **📌 Highlight:** From rough notes to board-ready document in minutes.
             
-    -   **✅ DEMO 4: Prompt as Workflow (Agent Logic)**
+    -   **✅ DEMO 4: Future Possibility - Course Accreditation Analysis**
         
-        -   _This is a more advanced concept, showing how a single prompt can orchestrate multiple tasks._
+        -   _This demonstrates what could be possible with Libre Chat (pending IT approval)._
             
-        -   **Prompt:** "Review this course proposal against Curtin's policies. Then: 1) identify compliance requirements, 2) highlight any gaps, 3) suggest specific improvements, and 4) draft an executive summary. Label each step."
+        -   **Conceptual Discussion:** "Imagine uploading course accreditation documents and asking: 'What are the key requirements for maintaining Engineers Australia accreditation for this program?'"
             
-        -   _Use `tso_mock_unit_data.csv` and a brief course proposal excerpt. Make sure to clearly label the sections in the output._
+        -   **Potential Value:** Query complex policy documents instantly instead of manual searching.
             
-        -   **📌 Highlight:** Single prompt → comprehensive compliance review (agent-like behavior).
+        -   **📌 Important Note:** "This is a future possibility. Libre Chat is currently under security review by Brenton and Matt. For now, we work within Copilot's capabilities."
             
     -   **🛠 Optional Prompt Enhancers (Discuss, don't necessarily demo all):**
         
@@ -308,25 +318,25 @@
             
         -   **Strategic what-ifs:** "Exploring multiple 'what-if' scenarios for course changes and student impact without spending days building complex spreadsheets."
             
-    -   **🤖 Live Demo: NotebookLM (if access is available)**
+    -   **🤖 Future Possibilities: Libre Chat Discussion**
         
-        -   "Now, I want to show you a tool that truly embodies this 'unlocking the impossible' idea: Google's NotebookLM."
+        -   "While we currently work within Copilot's capabilities, there's an exciting possibility on the horizon: Libre Chat."
             
-        -   "Imagine having an AI that knows _your_ documents — and cites them. Instead of re-reading a 50-page policy document, what if you could _ask_ it questions?"
+        -   "Imagine being able to upload course accreditation documents, TEQSA guidelines, or university policies and _ask_ them questions directly."
             
-        -   _Walkthrough (as per `AI_Unlocking_Impossible_Tasks.md`):_
+        -   _Conceptual walkthrough:_
             
-            -   "I'll upload some sample SOPs and past reports (mock data, of course)."
+            -   "You could upload accreditation requirements and ask: 'What are the key requirements for maintaining Engineers Australia accreditation?'"
                 
-            -   "Then, I can ask: 'Summarise how we advise on debt management based on these documents.'"
+            -   "Or query: 'What documentation is needed for a major course revision according to Curtin policy?'"
                 
-            -   "Or: 'What has changed in our approach to risk assessment over the last 3 years, according to these reports?'"
+            -   "This could transform how we handle complex compliance and policy questions."
                 
-        -   **📌 Emphasize:**
+        -   **📌 Important caveat:**
             
-            -   "This tool is not for student data (yet) – but it's perfect for internal playbooks, onboarding new TSO staff, ensuring consistency, and rapidly reusing your faculty's collective knowledge."
+            -   "Libre Chat is currently under security review by our IT team (Brenton and Matt)."
                 
-            -   "NotebookLM is like ChatGPT for your university's documents — but traceable and referenceable."
+            -   "This represents the future of secure, internal AI tools that respect data governance while enhancing productivity."
                 
     -   **🧠 Discussion Prompt:**
         

@@ -28,30 +28,33 @@ This session was designed to meet the Teaching Support Officers' goals of explor
 
 If the team would benefit from continued support, consider one or more of the following:
 
-#### 🔁 1. *Quick Win Implementation* Workshop (July 2025)
+#### 🔁 1. *Copilot Quick Win* Workshop (July 2025)
 
-> Implement the **Smart Business Case Generator** pilot project
+> Master **Microsoft Copilot for TSO Excellence**
 
-* Build automated templates for course proposals
-* Integrate TEQSA compliance checking
-* Test with real TSO workflows using secure data
+* Advanced Excel formula assistance and data analysis with Copilot
+* Automate business case generation in Word with Copilot
+* Build TSO-specific prompt templates for common tasks
+* Hands-on practice with real TSO scenarios (using secure data)
 
-#### 🛠 2. Strategic Win Development Session (August 2025)
+#### 🛠 2. Scoping an Intelligent Accreditation Hub (August 2025)
 
-> Develop the **Intelligent Impact Analysis** tools
+> Explore **Libre Chat for Policy & Accreditation Management**
 
-* Map current manual impact assessment processes
-* Build AI-assisted analysis workflows
-* Create templates for board presentations
+* Work with Brenton and Matt to assess Libre Chat security
+* Design secure document upload and query workflows
+* Pilot accreditation document Q&A system
+* Develop governance protocols for AI-assisted compliance
 
-#### 📚 3. TSO AI Toolkit Documentation (September 2025)
+#### 📚 3. TSO Copilot Excellence Toolkit (September 2025)
 
-> Create comprehensive TSO-specific AI resources:
+> Create comprehensive Microsoft Copilot resources for TSOs:
 
-* Validated prompts for common TSO tasks
-* Integration guides for Curtin systems
-* Best practices aligned with university policies
-* Success metrics and case studies
+* Validated Copilot prompts for Excel, Word, and Teams
+* TSO-specific templates and workflows
+* Integration guides for Curtin's M365 environment
+* Copilot best practices aligned with university policies
+* Success metrics and TSO case studies
 
 ---
 
