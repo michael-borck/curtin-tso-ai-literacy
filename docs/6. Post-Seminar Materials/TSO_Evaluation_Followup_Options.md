@@ -1,14 +1,14 @@
-## 📊 Evaluation & Follow-Up Options — Agvise AI Seminar
+## 📊 Evaluation & Follow-Up Options — TSO AI Literacy Program
 
 ### ✅ Session Focus Recap
 
-This session was designed to meet Agvise’s goals of exploring AI-enhanced workflows for internal efficiency and client-facing value. Rather than teaching isolated tasks, we focused on:
+This session was designed to meet the Teaching Support Officers' goals of exploring AI-enhanced workflows for operational efficiency and strategic impact. Rather than teaching isolated tasks, we focused on:
 
-* **Using AI as a collaborator**, not a shortcut
-* **Structured prompt strategies** (CRAFT + chaining)
-* **Mock reporting workflows** simulating Excel → Word pipelines
-* **Safe experimentation** using mock/public data only
-* **Sustainable and secure adoption** through Copilot, not ChatGPT alone
+* **Using AI as a collaborator** to enhance TSO capabilities
+* **Structured prompt strategies** (CRAFT + chaining) for compliance and analysis
+* **Mock university workflows** including business cases, impact analysis, and data consolidation
+* **Safe experimentation** using mock student data only
+* **Sustainable and secure adoption** aligned with Curtin policies
 
 ---
 
@@ -16,11 +16,11 @@ This session was designed to meet Agvise’s goals of exploring AI-enhanced work
 
 | Objective                            | Addressed? | Notes                                                                       |
 | ------------------------------------ | ---------- | --------------------------------------------------------------------------- |
-| Practical use cases                  | ✅          | Reporting, communication, strategy prompts                                  |
-| Internal + client workflows          | ✅          | Examples mapped to real Agvise practices                                    |
-| Time-saving automation strategies    | ✅ (framed) | Prompt-based workflow design shown; follow-up needed for automation tooling |
-| Governance-aware delivery            | ✅          | Emphasised secure platforms + mock data                                     |
-| Build independent exploration skills | ✅          | CRAFT, prompt playbook, personal challenge                                  |
+| Practical TSO use cases              | ✅          | Business cases, compliance checks, impact analysis                          |
+| Internal teaching support workflows  | ✅          | Examples mapped to real TSO responsibilities                                |
+| Time-saving automation strategies    | ✅ (framed) | Smart generators and automated workflows demonstrated                       |
+| University policy compliance         | ✅          | Emphasized secure platforms + student data protection                       |
+| Build TSO AI capabilities            | ✅          | CRAFT, prompt playbook, personal challenge worksheet                        |
 
 ---
 
@@ -28,27 +28,30 @@ This session was designed to meet Agvise’s goals of exploring AI-enhanced work
 
 If the team would benefit from continued support, consider one or more of the following:
 
-#### 🔁 1. *Prompt to Process* Workshop
+#### 🔁 1. *Quick Win Implementation* Workshop (July 2025)
 
-> Turn structured prompt chains into **automated workflows** using n8n, Power Automate, or Zapier.
+> Implement the **Smart Business Case Generator** pilot project
 
-* Live build: spreadsheet drop ➝ summary ➝ email draft
-* Hosted securely using mock data or sandbox environments
+* Build automated templates for course proposals
+* Integrate TEQSA compliance checking
+* Test with real TSO workflows using secure data
 
-#### 🛠 2. Copilot Integration Working Session
+#### 🛠 2. Strategic Win Development Session (August 2025)
 
-> A guided session mapping current Word/Excel workflows to Copilot functionality
+> Develop the **Intelligent Impact Analysis** tools
 
-* What’s ready to automate now?
-* What still needs human judgement?
+* Map current manual impact assessment processes
+* Build AI-assisted analysis workflows
+* Create templates for board presentations
 
-#### 📚 3. AI Adoption Brief or Playbook
+#### 📚 3. TSO AI Toolkit Documentation (September 2025)
 
-> A custom internal resource outlining:
+> Create comprehensive TSO-specific AI resources:
 
-* Prompts that work in your team
-* Where Copilot fits in your stack
-* Do’s & don’ts for secure AI use
+* Validated prompts for common TSO tasks
+* Integration guides for Curtin systems
+* Best practices aligned with university policies
+* Success metrics and case studies
 
 ---
 
@@ -60,11 +63,11 @@ If the team would benefit from continued support, consider one or more of the fo
 * What needs more depth next time?
 * Would follow-up training on automation tools be useful?
 
-Please reach out to Michael Borck or Curtin ExecEd with any ideas or requests.
+Please reach out to Michael Borck or the Teaching Support leadership team with any ideas or requests.
 
 ---
 
 ### 🏁 Final Thought
 
-> “You don’t need to build everything today. But every prompt you refine, every workflow you explore — that’s a step toward smarter, more strategic use of AI in your business.”
+> "You don't need to transform everything today. But every prompt you refine, every workflow you automate — that's a step toward the future of teaching support at Curtin."
 

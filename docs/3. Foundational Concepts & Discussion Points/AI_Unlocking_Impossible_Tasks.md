@@ -17,7 +17,7 @@ Help participants see beyond automation. This is where AI stops being a time-sav
 | Task Type            | Previously Hard/Impossible                        | Now Possible With AI                     |
 | -------------------- | ------------------------------------------------- | ---------------------------------------- |
 | Market synthesis     | Reading & comparing 5+ articles fast              | Summarise and extract insights instantly |
-| Report repurposing   | Turning 1 report into 3 formats                   | Reformat for client, email, or blog post |
+| Report repurposing   | Turning 1 report into 3 formats                   | Reformat for board, faculty, or students |
 | Internal Q\&A        | Answering SOP/policy questions on demand          | Summarise docs into NotebookLM           |
 | Competing viewpoints | Balanced review of opposing strategies            | Role-based prompting + simulated debate  |
 | Strategic what-ifs   | Scenario exploration without spreadsheet buildout | Prompt-driven exploration and trade-offs |
@@ -31,17 +31,17 @@ Help participants see beyond automation. This is where AI stops being a time-sav
 - Upload SOPs, reports, policies, and query them.
 - Great for internal insights, onboarding, and strategy docs.
 
-## Use Cases for Agvise
-- Ask: “How do we usually advise on lease arrangements?”
-- Summarise changes in advice over 3 years.
-- New staff can ask Qs without bugging seniors.
+## Use Cases for Teaching Support Officers
+- Ask: "What are the requirements for course accreditation at Curtin?"
+- Summarise changes in TEQSA guidelines over recent years.
+- New TSO staff can query policies without interrupting experienced colleagues.
 
 ## Limitations
-- Not suitable for client-sensitive content (yet).
+- Not suitable for student-sensitive content (yet).
 - Still in beta — best used for internal knowledge reuse.
 
 ## Summary
-> “NotebookLM is like ChatGPT for your firm’s documents — but traceable and referenceable.”
+> "NotebookLM is like ChatGPT for your university's documents — but traceable and referenceable."
 
 
 ---
@@ -62,8 +62,8 @@ Help participants see beyond automation. This is where AI stops being a time-sav
 
 ### 🧠 Discussion Prompt
 
-> “What’s something you’ve *wanted* to do for clients, but never had the time or tools for?”
-> “What would a junior analyst, working 24/7 and able to read anything instantly, let you do more of?”
+> "What's something you've *wanted* to do for faculty support, but never had the time or tools for?"
+> "What would a junior TSO assistant, working 24/7 and able to read any policy instantly, let you do more of?"
 
 ---
 
@@ -73,7 +73,7 @@ Help participants see beyond automation. This is where AI stops being a time-sav
 
 Example:
 
-> "Write a benchmarking summary comparing this year’s farm performance to 3 previous seasons. Highlight weather-adjusted yield impact and price trends."
+> "Write a benchmarking summary comparing this semester's unit performance to 3 previous semesters. Highlight enrollment trends, completion rates, and resource utilization patterns."
 
 ---
 

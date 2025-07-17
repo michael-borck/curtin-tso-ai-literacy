@@ -1,6 +1,6 @@
 ## 🗺️ AI Seminar: Agenda to Document Map
 
-This document outlines which handouts and resources are relevant for each section of the "AI-Powered Productivity for Consultants" seminar.
+This document outlines which handouts and resources are relevant for each section of the "AI Literacy and Capability for Teaching Support Officers" workshop.
 
 ### 🗓️ Seminar Agenda & Associated Materials
 
@@ -20,17 +20,17 @@ This document outlines which handouts and resources are relevant for each sectio
     -   _None explicitly handed out during this segment, but the interactive agenda can be introduced._
         
 
-**0:10–0:30 – Automate the Tedious (Word & Excel Copilot)**
+**0:10–0:30 – Automating Our Core Work: From Hours to Minutes**
 
--   **Purpose:** Demonstrate how AI can eliminate repetitive tasks like summarization and content generation.
+-   **Purpose:** Demonstrate how AI can eliminate repetitive teaching support tasks like compliance checking and business case writing.
     
 -   **Referenced Materials:**
     
-    -   `agvise_mock_crop_data.csv` (as the mock data for live demos)
+    -   `tso_mock_unit_data.csv` (as the mock data for live demos)
         
     -   `Prompt_Examples_Value_Adding.md` (for specific prompts used in the demos, e.g., "Summarise a Table", "Turn Data into Narrative")
         
-    -   `Prompt_Playbook_for_Consultants.md` (as a broader resource for more automation examples)
+    -   `Prompt_Playbook_for_TSOs.md` (as a broader resource for more automation examples)
         
 
 **0:30–0:45 – Prompt Crafting with CRAFT**
@@ -41,7 +41,7 @@ This document outlines which handouts and resources are relevant for each sectio
     
     -   `CRAFT_Prompting_Framework.md` (the core handout explaining CRAFT)
         
-    -   `Prompt_Playbook_for_Consultants.md` (for additional CRAFT-based prompt examples)
+    -   `Prompt_Playbook_for_TSOs.md` (for additional CRAFT-based prompt examples)
         
 
 **0:45–0:55 – ☕ Break**
@@ -85,7 +85,7 @@ This document outlines which handouts and resources are relevant for each sectio
     
     -   `Personal_AI_Challenge_Worksheet.md` (the worksheet for individual activity)
         
-    -   `Prompt_Playbook_for_Consultants.md` (as a reference for ideas if participants need inspiration for their challenge)
+    -   `Prompt_Playbook_for_TSOs.md` (as a reference for ideas if participants need inspiration for their challenge)
         
 
 **1:45–2:00 – Wrap-Up & Takeaways**
@@ -98,6 +98,6 @@ This document outlines which handouts and resources are relevant for each sectio
         
     -   _All previously distributed handouts should be reiterated as available resources._
         
-    -   `Agvise_Evaluation_Followup_Options.md` (can be mentioned as a resource for post-seminar engagement and continued learning opportunities).
+    -   `TSO_Evaluation_Followup_Options.md` (can be mentioned as a resource for post-workshop engagement and continued learning opportunities).
 
 

@@ -33,15 +33,24 @@ End the seminar with clarity, confidence, and practical next steps. Reinforce ke
 
 ---
 
-### 🚀 Next Steps
+### 🚀 Next Steps & Project Timeline
 
-> “You don’t need permission to start — you just need a use case. Start small, stay safe, and build from there.”
+> "You don't need permission to start — you just need a use case. Start small, stay safe, and build from there."
 
-Recommend:
+**Immediate Actions (aligned with June 2025 milestone):**
+* Use the Personal AI Challenge worksheet to identify your high-impact use case
+* This feeds directly into our "Brainstorm and identify initial high-impact use cases" milestone
 
-* Prototyping one idea next week (AI summary, blog, table analysis)
-* Sharing one working prompt with a colleague
-* Bringing ideas to their next team or strategy session
+**Coming Next (July-September 2025):**
+* Quick Win: Smart Business Case Generator pilot
+* Strategic Win: Intelligent Impact Analysis tools
+* Operational Win: Automated data workflows
+
+**Your Role:**
+* Prototype one idea next week using the techniques from today
+* Share successful prompts with your TSO colleagues
+* Bring your use cases to the next Teaching Support meeting
+* Contribute to building our TSO AI toolkit
 
 ---
 

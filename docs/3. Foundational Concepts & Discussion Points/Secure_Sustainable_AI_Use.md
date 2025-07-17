@@ -14,20 +14,33 @@ Ground the seminar in responsible use. Provide participants with confidence abou
 
 ## 🔍 Key Principles
 
+### Core AI Implementation Principles
+
+1. **People-first Design**
+   AI should enhance human capabilities, not replace human judgment. TSOs remain central to teaching support delivery.
+
+2. **Responsible and Ethical Use of AI**
+   Consider the impact on students, staff, and academic integrity. Ensure transparency in AI-assisted processes.
+
+3. **Secure and Responsible Design**
+   Align with Curtin's IT security policies and TEQSA compliance requirements. Protect student data and privacy.
+
+### Practical Safety Guidelines
+
 1. **Use mock or public data in all experiments**
-   Especially in exploratory or non-integrated tools (e.g., ChatGPT, Claude).
+   Especially in exploratory or non-integrated tools (e.g., ChatGPT, Claude). Never use real student data outside secure systems.
 
 2. **Assume anything entered into a public AI chat is public**
-   Unless you *know* the tool offers enterprise privacy, don’t paste sensitive or client-identifiable info.
+   Unless you *know* the tool offers enterprise privacy, don't paste student-identifiable or sensitive university information.
 
 3. **Use your secure platforms for sensitive work**
-   Copilot inside Microsoft 365 is enterprise-grade: your data stays in your tenant and isn’t used to train models.
+   Copilot inside Microsoft 365 is enterprise-grade: your data stays in your tenant and isn't used to train models.
 
 4. **Prototype in chat tools, deploy in secure environments**
-   Prompt in ChatGPT, migrate your workflow to Copilot, Zapier, or n8n later.
+   Test prompts with mock data in ChatGPT, then migrate your workflow to secure Copilot or approved university systems.
 
 5. **Governance is a team sport**
-   Involve your IT/security leads when formalising AI use. Keep logs, version prompts, and review how tools access data.
+   Involve your IT/security leads and Teaching & Learning committee when formalising AI use. Keep logs, version prompts, and review how tools access data.
 
 ---
 
@@ -84,9 +97,9 @@ Ground the seminar in responsible use. Provide participants with confidence abou
 
 ---
 
-## 🚶 What to Say if Asked: “Can we use this for real clients?”
+## 🚶 What to Say if Asked: "Can we use this for real student data?"
 
-> “Yes, but only in tools governed by your enterprise environment — like Copilot in Microsoft 365. You can prototype freely in public AI, but don’t use client data outside secure systems.”
+> "Yes, but only in tools governed by Curtin's enterprise environment — like Copilot in Microsoft 365. You can prototype freely in public AI with mock data, but never use real student data outside secure university systems."
 
 ---
 
