@@ -24,8 +24,8 @@
             font-family: 'Inter', sans-serif; /* Tailwind default is sans-serif, Inter is a common nice choice */
         }
         .sidebar-link.active {
-            background-color: #2dd4bf; /* Tailwind teal-400 */
-            color: white;
+            background-color: #D4A017; /* Curtin gold */
+            color: black;
         }
         .content-section {
             display: none;
@@ -63,24 +63,27 @@
 <body class="bg-stone-100 text-stone-800 flex flex-col md:flex-row min-h-screen">
 
     <aside class="w-full md:w-64 bg-stone-200 p-6 shadow-lg fixed md:sticky top-0 h-screen overflow-y-auto md:flex-shrink-0 z-20">
-        <h1 class="text-2xl font-bold text-teal-700 mb-6 flex items-center justify-between">
-            <span>🎓 TSO AI Literacy</span>
-            <a href="🎓 TSO AI Literacy.pdf" target="_blank" title="Download Program Handouts (PDF)" class="text-stone-500 hover:text-teal-700 transition-colors duration-200 text-xl">
-                ⬇️
-            </a>
-        </h1>
+        <div class="mb-6">
+            <img src="docs/curtin-logo.webp" alt="Curtin University" class="w-full mb-4">
+            <h1 class="text-xl font-bold text-gray-800 flex items-center justify-between">
+                <span>TSO AI Literacy</span>
+                <a href="🎓 TSO AI Literacy.pdf" target="_blank" title="Download Program Handouts (PDF)" class="text-stone-500 hover:text-yellow-600 transition-colors duration-200 text-xl">
+                    ⬇️
+                </a>
+            </h1>
+        </div>
         <nav>
             <ul class="space-y-2">
-                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="welcome">Welcome & Overview</a></li>
-                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="automate">Automate the Tedious</a></li>
-                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="craft">Prompt Crafting (CRAFT)</a></li>
-                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="prompt_guides">Prompting Guides</a></li>
-                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="unlocking">Unlocking the Impossible</a></li>
-                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="secure_ai">Secure & Sustainable AI</a></li>
-                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="challenge">Personal AI Challenge</a></li>
-                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="tensions">Core Tensions in AI</a></li>
-                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="wrap_up">Wrap-Up & Next Steps</a></li>
-                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-200" data-target="podcast">Seminar Podcast / Audio</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-yellow-500 hover:text-black transition-colors duration-200" data-target="welcome">Welcome & Overview</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-yellow-500 hover:text-black transition-colors duration-200" data-target="automate">Automate the Tedious</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-yellow-500 hover:text-black transition-colors duration-200" data-target="craft">Prompt Crafting (CRAFT)</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-yellow-500 hover:text-black transition-colors duration-200" data-target="prompt_guides">Prompting Guides</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-yellow-500 hover:text-black transition-colors duration-200" data-target="unlocking">Unlocking the Impossible</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-yellow-500 hover:text-black transition-colors duration-200" data-target="secure_ai">Secure & Sustainable AI</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-yellow-500 hover:text-black transition-colors duration-200" data-target="challenge">Personal AI Challenge</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-yellow-500 hover:text-black transition-colors duration-200" data-target="tensions">Core Tensions in AI</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-yellow-500 hover:text-black transition-colors duration-200" data-target="wrap_up">Wrap-Up & Next Steps</a></li>
+                <li><a href="#" class="sidebar-link block py-2 px-3 rounded-lg hover:bg-yellow-500 hover:text-black transition-colors duration-200" data-target="podcast">Seminar Podcast / Audio</a></li>
             </ul>
         </nav>
 	<div class="mt-8 pt-4 border-t border-stone-300 text-center text-xs text-stone-500">
@@ -90,7 +93,7 @@
 
     <main class="flex-1 p-6 md:p-10 overflow-y-auto mt-16 md:mt-0">
         <section id="welcome" class="content-section active">
-            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">Welcome & Program Overview</h2>
+            <h2 class="text-3xl font-semibold text-yellow-600 mb-6 border-b-2 border-yellow-500 pb-2">Welcome & Program Overview</h2>
             <p class="mb-4 text-lg">This interactive hub provides all the materials for the "AI Literacy and Capability Program" for Teaching Support Officers at Curtin University. Navigate through the sections to explore how AI can transform teaching support operations, from automating compliance documentation to providing strategic insights.</p>
             
             <div class="bg-white p-6 rounded-lg shadow-md mb-6">
@@ -127,7 +130,7 @@
         </section>
 
         <section id="automate" class="content-section">
-            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">⚙️ Automate the Tedious</h2>
+            <h2 class="text-3xl font-semibold text-yellow-600 mb-6 border-b-2 border-yellow-500 pb-2">⚙️ Automate the Tedious</h2>
             <p class="mb-4 text-lg">This section focuses on how AI can eliminate repetitive and time-consuming tasks in teaching support operations, particularly around compliance documentation, impact analysis, and data consolidation. We'll explore how to evolve from basic prompting to complex, strategic workflows.</p>
 
             <div class="bg-white p-6 rounded-lg shadow-md mb-6">
@@ -149,7 +152,7 @@
                 <p class="mb-2">We'll work with mock university data and policy excerpts using Microsoft Copilot in Excel and Word.</p>
                 
                 <div class="mb-4 p-4 border border-stone-300 rounded-lg">
-                    <h4 class="font-semibold text-teal-700">DEMO 1: Excel Formula Assistance with Copilot</h4>
+                    <h4 class="font-semibold text-yellow-700">DEMO 1: Excel Formula Assistance with Copilot</h4>
                     <p class="mb-1"><strong>Scenario:</strong> You have a complex spreadsheet with broken formulas for calculating student load and resource allocation.</p>
                     <p class="mb-1"><strong>Initial Prompt:</strong> Copy the broken formula and ask Copilot: "What's wrong with this formula and how can I fix it?"</p>
                     <p><strong>Follow-Up Prompt:</strong> "Generate a formula that calculates the weighted average of student satisfaction scores across multiple units, excluding any blank cells."</p>
@@ -157,7 +160,7 @@
                 </div>
 
                 <div class="mb-4 p-4 border border-stone-300 rounded-lg">
-                    <h4 class="font-semibold text-teal-700">DEMO 2: Spreadsheet Analysis with Copilot</h4>
+                    <h4 class="font-semibold text-yellow-700">DEMO 2: Spreadsheet Analysis with Copilot</h4>
                     <p class="mb-1"><strong>Scenario:</strong> Analyze the tso_mock_unit_data.csv to identify trends without manual formula writing.</p>
                     <p class="mb-1"><strong>Prompt:</strong> "Analyze this enrollment data and identify which units are at risk of low numbers. Create a summary table showing units with declining enrollment over 3 semesters."</p>
                     <p><strong>Follow-Up:</strong> "Generate a chart showing enrollment trends and highlight units that need intervention."</p>
@@ -165,7 +168,7 @@
                 </div>
 
                 <div class="mb-4 p-4 border border-stone-300 rounded-lg">
-                    <h4 class="font-semibold text-teal-700">DEMO 3: Smart Business Case Generator in Word</h4>
+                    <h4 class="font-semibold text-yellow-700">DEMO 3: Smart Business Case Generator in Word</h4>
                     <p class="mb-1"><strong>Scenario:</strong> Using Copilot in Word to draft compliance-ready documents.</p>
                     <p class="mb-1"><strong>Prompt:</strong> "Draft a business case for a new engineering unit. Include sections for: market demand, resource requirements, TEQSA compliance, and risk assessment. Use formal academic language suitable for faculty board approval."</p>
                     <p class="mb-1"><strong>Follow-Up:</strong> "Review this draft and ensure it addresses all requirements in Curtin's course approval policy. Flag any missing elements."</p>
@@ -173,7 +176,7 @@
                 </div>
 
                  <div class="mb-4 p-4 border border-stone-300 rounded-lg">
-                    <h4 class="font-semibold text-teal-700">DEMO 4: Future Possibility - Course Accreditation Analysis</h4>
+                    <h4 class="font-semibold text-yellow-700">DEMO 4: Future Possibility - Course Accreditation Analysis</h4>
                     <p class="mb-1"><strong>Note:</strong> This demonstrates what could be possible with Libre Chat (pending IT approval).</p>
                     <p class="mb-1"><strong>Conceptual Use Case:</strong> "Upload course accreditation documents and ask: What are the key requirements for maintaining Engineers Australia accreditation for this program?"</p>
                     <p class="mb-1"><strong>Potential Value:</strong> Query complex policy documents instantly instead of manual searching.</p>
@@ -201,7 +204,7 @@
         </section>
 
         <section id="craft" class="content-section">
-            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">🔨 Prompt Crafting with CRAFT</h2>
+            <h2 class="text-3xl font-semibold text-yellow-600 mb-6 border-b-2 border-yellow-500 pb-2">🔨 Prompt Crafting with CRAFT</h2>
             <p class="mb-4 text-lg">Learn how to write better prompts that yield more relevant, high-quality AI responses using the structured CRAFT framework.</p>
             
             <div class="bg-white p-6 rounded-lg shadow-md mb-6">
@@ -250,12 +253,12 @@
         </section>
 
         <section id="prompt_guides" class="content-section">
-            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">📚 Prompting Guides & Examples</h2>
+            <h2 class="text-3xl font-semibold text-yellow-600 mb-6 border-b-2 border-yellow-500 pb-2">📚 Prompting Guides & Examples</h2>
             <p class="mb-4 text-lg">Explore a collection of prompt patterns, techniques, and examples to enhance your AI interactions for various teaching support tasks.</p>
             
             <div class="space-y-6">
                 <details class="bg-white p-4 rounded-lg shadow">
-                    <summary class="font-semibold text-lg text-teal-700 cursor-pointer">Value-Adding Prompts</summary>
+                    <summary class="font-semibold text-lg text-yellow-700 cursor-pointer">Value-Adding Prompts</summary>
                     <div class="mt-2 text-stone-700 space-y-2">
                         <p><strong>Summary Use Case (Excel with Copilot):</strong> "Analyze the unit performance data in this spreadsheet. Create a summary focusing on enrollment trends, student outcomes, and resource utilization. Add a chart showing key metrics."</p>
                         <p><strong>Communication Use Case (Word with Copilot):</strong> "Using this unit analysis data, draft a faculty newsletter update. Include sections on teaching innovations, student satisfaction improvements, and resource efficiency. Use professional language with a positive tone."</p>
@@ -265,7 +268,7 @@
                 </details>
 
                 <details class="bg-white p-4 rounded-lg shadow">
-                    <summary class="font-semibold text-lg text-teal-700 cursor-pointer">Prompt Chaining Techniques</summary>
+                    <summary class="font-semibold text-lg text-yellow-700 cursor-pointer">Prompt Chaining Techniques</summary>
                     <div class="mt-2 text-stone-700 space-y-2">
                         <p><strong>Document Analysis Workflow (Word with Copilot):</strong> First prompt: "Analyze this course proposal and identify key compliance requirements based on TEQSA standards." Follow-up: "Now highlight 3 potential compliance risks and suggest improvements for each." Final: "Create an executive summary of the analysis with clear recommendations."</p>
                         <p><strong>Format Shifting (Word/Outlook with Copilot):</strong> First prompt: "Summarize this impact analysis report into 5 key points for the board." Follow-up: "Now draft an email to faculty staff with the same information but in a more conversational tone." Final: "Create a brief 2-paragraph update for the student portal focusing on positive outcomes."</p>
@@ -274,7 +277,7 @@
                 </details>
 
                 <details class="bg-white p-4 rounded-lg shadow">
-                    <summary class="font-semibold text-lg text-teal-700 cursor-pointer">Advanced AI Prompting Tips</summary>
+                    <summary class="font-semibold text-lg text-yellow-700 cursor-pointer">Advanced AI Prompting Tips</summary>
                     <div class="mt-2 text-stone-700 space-y-2">
                         <p><strong>AI Debate Technique:</strong> Have two AIs critique each other's solutions.</p>
                         <p><strong>Different AIs for Different Roles:</strong> Assign specialized roles (Compliance Officer AI, Student Success Analyst AI).</p>
@@ -285,7 +288,7 @@
                     </div>
                 </details>
                  <details class="bg-white p-4 rounded-lg shadow">
-                    <summary class="font-semibold text-lg text-teal-700 cursor-pointer">Prompt Playbook Highlights</summary>
+                    <summary class="font-semibold text-lg text-yellow-700 cursor-pointer">Prompt Playbook Highlights</summary>
                     <div class="mt-2 text-stone-700 space-y-2">
                         <p><strong>One-Shot Starters:</strong> "Analyze this enrollment data.", "Draft a business case for this unit."</p>
                         <p><strong>Multi-Turn Chains:</strong> "1. Analyze data. 2. Identify risks. 3. Create recommendations."</p>
@@ -297,7 +300,7 @@
         </section>
 
         <section id="unlocking" class="content-section">
-            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">🌟 Unlocking the Impossible</h2>
+            <h2 class="text-3xl font-semibold text-yellow-600 mb-6 border-b-2 border-yellow-500 pb-2">🌟 Unlocking the Impossible</h2>
              <p class="mb-4 text-lg">This section helps us see beyond automation to how AI can expand our capabilities, enabling tasks previously too complex, time-consuming, or costly.</p>
             <div class="bg-white p-6 rounded-lg shadow-md mb-6">
                 <h3 class="text-xl font-semibold text-stone-700 mb-3">💡 Framing Statement</h3>
@@ -336,7 +339,7 @@
         </section>
 
         <section id="secure_ai" class="content-section">
-            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">🔒 Secure & Sustainable AI Use</h2>
+            <h2 class="text-3xl font-semibold text-yellow-600 mb-6 border-b-2 border-yellow-500 pb-2">🔒 Secure & Sustainable AI Use</h2>
             <p class="mb-4 text-lg">Grounding our AI exploration in responsible use is crucial. This section covers how to use AI confidently without risking sensitive data, and how to think long-term about secure, governed AI integration.</p>
             
             <div class="bg-white p-6 rounded-lg shadow-md mb-6">
@@ -368,7 +371,7 @@
         </section>
 
         <section id="challenge" class="content-section">
-            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">🧩 Personal AI Challenge</h2>
+            <h2 class="text-3xl font-semibold text-yellow-600 mb-6 border-b-2 border-yellow-500 pb-2">🧩 Personal AI Challenge</h2>
             <p class="mb-4 text-lg">Apply what you've learned to a personal, meaningful task. This is a space for experimentation, reflection, and building confidence in your AI prompting skills.</p>
             <div class="bg-white p-6 rounded-lg shadow-md">
                 <h3 class="text-xl font-semibold text-stone-700 mb-3">📝 Worksheet Prompts</h3>
@@ -384,7 +387,7 @@
         </section>
 
         <section id="tensions" class="content-section">
-            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">⚖️ Core Tensions in AI-Assisted Work</h2>
+            <h2 class="text-3xl font-semibold text-yellow-600 mb-6 border-b-2 border-yellow-500 pb-2">⚖️ Core Tensions in AI-Assisted Work</h2>
             <p class="mb-4 text-lg">AI is powerful, but it introduces trade-offs. This section highlights key tensions to consider for balancing ambition with caution.</p>
             <div class="bg-white p-6 rounded-lg shadow-md mb-6">
                 <h3 class="text-xl font-semibold text-stone-700 mb-3">🧠 Thinking vs. Replacing</h3>
@@ -403,7 +406,7 @@
         </section>
 
         <section id="wrap_up" class="content-section">
-            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">🎁 Wrap-Up & Next Steps</h2>
+            <h2 class="text-3xl font-semibold text-yellow-600 mb-6 border-b-2 border-yellow-500 pb-2">🎁 Wrap-Up & Next Steps</h2>
             <p class="mb-4 text-lg">Concluding the seminar with clarity, confidence, and practical next steps to integrate AI into your workflows.</p>
             
             <div class="bg-white p-6 rounded-lg shadow-md mb-6">
@@ -413,7 +416,7 @@
                     <li>Prototype one idea next week (AI summary, blog, table analysis).</li>
                     <li>Share one working prompt with a colleague.</li>
                     <li>Bring ideas to your next team or strategy session.</li>
-                <li><a href="🎓 TSO AI Literacy.pdf" target="_blank" class="text-teal-600 hover:text-teal-800 font-semibold transition-colors duration-200">
+                <li><a href="🎓 TSO AI Literacy.pdf" target="_blank" class="text-yellow-600 hover:text-yellow-800 font-semibold transition-colors duration-200">
                         ⬇️ Download Program (PDF)
                     </a></li>
                 </ul>
@@ -434,7 +437,7 @@
         </section>
 
 	<section id="podcast" class="content-section">
-            <h2 class="text-3xl font-semibold text-teal-600 mb-6 border-b-2 border-teal-500 pb-2">🎙️ Seminar Podcast / Audio</h2>
+            <h2 class="text-3xl font-semibold text-yellow-600 mb-6 border-b-2 border-yellow-500 pb-2">🎙️ Seminar Podcast / Audio</h2>
             <p class="mb-4 text-lg">Listen to the seminar content on the go! Below you'll find the embedded audio player for the seminar information.</p>
             
             <div class="bg-white p-6 rounded-lg shadow-md mb-6">
