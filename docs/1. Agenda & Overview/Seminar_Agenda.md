@@ -1,5 +1,5 @@
-# 🌾 AI-Powered Productivity for Consultants
-*From Automating the Tedious to Unlocking the Impossible*
+# 🎓 AI Literacy and Capability for Teaching Support
+*Transforming Teaching Support Operations at Curtin University*
 
 **Facilitator:** Michael Borck
 **Duration:** 2 hours
@@ -9,23 +9,23 @@
 
 ## 🗓️ Agenda Overview
 
-* **0:00–0:10** – Welcome & Framing
-* **0:10–0:30** – Automate the Tedious (Word & Excel Copilot)
-* **0:30–0:45** – Prompt Crafting with CRAFT
+* **0:00–0:10** – Welcome & Framing: The Future of Teaching Support
+* **0:10–0:30** – Automating Our Core Work: From Hours to Minutes
+* **0:30–0:45** – Prompt Crafting for Compliance and Clarity
 * **0:45–0:55** – ☕ Break
-* **0:55–1:15** – Unlocking the Impossible (incl. NotebookLM demo)
+* **0:55–1:15** – Unlocking New Capabilities: Strategic Impact Analysis
 * **1:15–1:30** – Secure & Sustainable AI Use
-* **1:30–1:45** – Personal AI Challenge
-* **1:45–2:00** – Wrap-Up & Takeaways
+* **1:30–1:45** – Your Workflow Challenge: A Hands-On Workshop
+* **1:45–2:00** – Wrap-Up & Next Steps
 
 ---
 
 ## 🧠 Learning Goals
 
-- Automate common consulting tasks using AI in Word/Excel
-- Write better prompts using the CRAFT framework
-- Explore emerging tools like NotebookLM for internal knowledge work
-- Understand AI limitations, privacy, and sustainable use
+- Automate and streamline internal teaching support operations like business case writing, impact analysis, and data collection
+- Write effective prompts using the CRAFT framework to generate compliance-focused documentation and analyze student data
+- Explore how AI tools can provide proactive insights for support planning and optimization
+- Understand AI limitations, privacy, and secure implementation within university policies
 
 ## 🔧 Participant Setup & Access Requirements
 
