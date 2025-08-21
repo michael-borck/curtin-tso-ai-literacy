@@ -24,7 +24,7 @@ But also — the first prompt is rarely the final answer. Good prompts invite a 
 | ------ | --------------- | ------------------------------------------------- |
 | C      | **Context**     | "This data is from Curtin engineering units over 3 semesters." |
 | R      | **Role**        | "You are a senior Teaching Support Officer."                   |
-| A      | **Action**      | "Analyse enrollment trends and resource utilization."          |
+| A      | **Action**      | "Analyse enrolment trends and resource utilisation."          |
 | F      | **Format**      | "Write in bullet points."                                      |
 | T      | **Tone/Target** | "Use clear language for a faculty board presentation."         |
 
@@ -40,7 +40,7 @@ But also — the first prompt is rarely the final answer. Good prompts invite a 
 
 **Improved Prompt (with CRAFT):**
 
-> "This is enrollment data from engineering units at Curtin over three semesters. You are an experienced Teaching Support Officer. Analyse the enrollment trends and identify any units at risk of low numbers. Output in three bullet points using clear language for the faculty board."
+> "This is enrolment data from engineering units at Curtin over three semesters. You are an experienced Teaching Support Officer. Analyse the enrolment trends and identify any units at risk of low numbers. Output in three bullet points using clear language for the faculty board."
 
 ---
 

@@ -32,8 +32,8 @@ This interactive hub provides all the materials for the "AI Literacy and Capabil
 ### 🧠 Learning Goals
 
 - Automate and streamline internal teaching support operations like business case writing, impact analysis, and data collection
-- Write effective prompts using the CRAFT framework to generate compliance-focused documentation and analyze student data
-- Explore how AI tools can provide proactive insights for support planning and optimization
+- Write effective prompts using the CRAFT framework to generate compliance-focused documentation and analyse student data
+- Explore how AI tools can provide proactive insights for support planning and optimisation
 - Understand AI limitations, privacy, and secure implementation within university policies
 
 ### 🔧 Participant Setup & Access Requirements
@@ -77,8 +77,8 @@ We'll work with mock university data and policy excerpts using Microsoft Copilot
 
 #### DEMO 2: Spreadsheet Analysis with Copilot
 - **Scenario:** Analyze the `tso_mock_unit_data.csv` to identify trends without manual formula writing.
-- **Prompt:** "Analyze this enrollment data and identify which units are at risk of low numbers. Create a summary table showing units with declining enrollment over 3 semesters."
-- **Follow-Up:** "Generate a chart showing enrollment trends and highlight units that need intervention."
+- **Prompt:** "Analyse this enrolment data and identify which units are at risk of low numbers. Create a summary table showing units with declining enrolment over 3 semesters."
+- **Follow-Up:** "Generate a chart showing enrolment trends and highlight units that need intervention."
 - 📌 **Highlight:** Transform raw data into actionable insights in minutes, not hours.
 
 #### DEMO 3: Smart Business Case Generator in Word
@@ -100,12 +100,12 @@ We'll work with mock university data and policy excerpts using Microsoft Copilot
 | 2024 S1 | ENGR1001 | 285 | 300 | 92% | Full |
 | 2024 S1 | PHYS2002 | 156 | 200 | 88% | Adequate |
 | 2024 S1 | MATH101 | 420 | 400 | 85% | Over capacity |
-| 2024 S1 | COMP3001 | 98 | 150 | 94% | Under-utilized |
+| 2024 S1 | COMP3001 | 98 | 150 | 94% | Under-utilised |
 
 ### 🛠 Copilot Prompt Enhancers
 
 - "Fix this Excel formula and explain what was wrong."
-- "Create a pivot table summarizing enrollment by faculty."
+- "Create a pivot table summarising enrolment by faculty."
 - "Generate a VLOOKUP formula to match student IDs with completion rates."
 - "Draft this in formal academic language suitable for board review."
 - "Check this document against university policy requirements."
@@ -135,7 +135,7 @@ Learn how to write better prompts that yield more relevant, high-quality AI resp
 |--------|---------|---------|
 | C | **Context** | "This data is from Curtin engineering units over 3 semesters." |
 | R | **Role** | "You are a senior Teaching Support Officer." |
-| A | **Action** | "Analyse enrollment trends and resource utilization." |
+| A | **Action** | "Analyse enrolment trends and resource utilisation." |
 | F | **Format** | "Write in bullet points." |
 | T | **Tone/Target** | "Use clear language for a faculty board presentation." |
 
@@ -147,7 +147,7 @@ Learn how to write better prompts that yield more relevant, high-quality AI resp
 > "What's happening with student numbers?"
 
 **Improved Prompt (with CRAFT):**
-> "This is enrollment data from engineering units at Curtin over three semesters. You are an experienced Teaching Support Officer. Analyse the enrollment trends and identify any units at risk of low numbers. Output in three bullet points using clear language for the faculty board."
+> "This is enrolment data from engineering units at Curtin over three semesters. You are an experienced Teaching Support Officer. Analyse the enrolment trends and identify any units at risk of low numbers. Output in three bullet points using clear language for the faculty board."
 
 ### 🗣️ Prompting as a Conversation with Copilot
 
@@ -171,7 +171,7 @@ Explore a collection of prompt patterns, techniques, and examples to enhance you
 #### ✨ One-Shot Prompt Starters for Copilot
 
 **🔹 Summarise a table (Excel with Copilot)**
-> "Analyze this student enrollment data and highlight which units have capacity issues and any concerning trends in student progression. Create a summary table."
+> "Analyze this student enrolment data and highlight which units have capacity issues and any concerning trends in student progression. Create a summary table."
 
 **🔹 Rewrite for faculty (Word with Copilot)**
 > "Rewrite this unit performance summary for a faculty board meeting. Keep it under 150 words and focus on actionable insights. Use formal academic language."
@@ -180,12 +180,12 @@ Explore a collection of prompt patterns, techniques, and examples to enhance you
 > "Draft an executive summary of this semester's teaching support achievements. Include sections for efficiency gains, compliance improvements, and student satisfaction metrics. Format with clear headings."
 
 **🔹 Strategy from data (Excel with Copilot)**
-> "Based on this enrollment and resource data, identify three strategic options for next semester's unit offerings. Create a table showing each option with pros, cons, and resource impact."
+> "Based on this enrolment and resource data, identify three strategic options for next semester's unit offerings. Create a table showing each option with pros, cons, and resource impact."
 
 ### 📊 From Data to Decisions: Value-Adding Copilot Prompts
 
 **🧠 Summary Use Case: Teaching Support Analysis (Excel with Copilot)**
-> "Analyze the unit performance data in this spreadsheet. Create a summary focusing on enrollment trends, student outcomes, and resource utilization. Add a chart showing key metrics."
+> "Analyze the unit performance data in this spreadsheet. Create a summary focusing on enrolment trends, student outcomes, and resource utilisation. Add a chart showing key metrics."
 
 **📰 Communication Use Case: Faculty Update (Word with Copilot)**
 > "Using this unit analysis data, draft a faculty newsletter update. Include sections on teaching innovations, student satisfaction improvements, and resource efficiency. Use professional language with a positive tone."
@@ -215,7 +215,7 @@ Explore a collection of prompt patterns, techniques, and examples to enhance you
 > Role: Analyze as a senior Teaching Support Officer would.  
 > Action: Identify key trends and anomalies in the data.  
 > Format: Create a summary table with bullet points for each finding.  
-> Target: Focus on enrollment patterns, completion rates, and resource utilization."
+> Target: Focus on enrolment patterns, completion rates, and resource utilisation."
 
 **📝 Turn Data into Narrative (Word with Copilot)**
 > "Context: These are business school unit metrics for TEQSA compliance review.  
@@ -229,7 +229,7 @@ Explore a collection of prompt patterns, techniques, and examples to enhance you
 > Role: Provide analysis as an experienced Teaching Support Officer.  
 > Action: Develop 3 strategic scenarios for maintaining teaching quality despite budget cuts.  
 > Format: Create a comparison table showing each option with advantages, risks, and resource implications.  
-> Target: Consider unit consolidation, online delivery expansion, and staffing optimization."
+> Target: Consider unit consolidation, online delivery expansion, and staffing optimisation."
 
 ---
 
@@ -337,7 +337,7 @@ Apply what you've learned to a personal, meaningful task. This is a space for ex
 
 ### 📝 Worksheet Prompts
 
-1. What's the task or challenge you're exploring? (e.g., Automating business case templates in Word, analyzing unit performance data in Excel)
+1. What's the task or challenge you're exploring? (e.g., Automating business case templates in Word, analysing unit performance data in Excel)
 2. What do you currently do?
 3. Draft your CRAFT prompt for this task.
 4. Which tool would you try? (☐ Copilot (recommended for university work) ☐ ChatGPT (personal exploration only) ☐ Other)

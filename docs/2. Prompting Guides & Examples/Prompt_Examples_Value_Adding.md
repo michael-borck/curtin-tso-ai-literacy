@@ -1,14 +1,14 @@
 # 📊 From Data to Decisions: Value-Adding AI Prompts for Teaching Support Officers
 
 *Using Unit Performance and Student Data as Input Material*  
-These prompts demonstrate how AI can assist in **analyzing, compliance checking, and strategic planning** — not just automating, but **adding strategic value**.
+These prompts demonstrate how AI can assist in **analysing, compliance checking, and strategic planning** — not just automating, but **adding strategic value**.
 
 ---
 
 ## 🧠 Summary Use Case: "Act Like a Teaching Support Analyst"
 
 ### Prompt
-> "Summarise the key insights from this semester's unit performance data. Use plain English. Focus on enrollment trends, student outcomes, and resource utilization."
+> "Summarise the key insights from this semester's unit performance data. Use plain English. Focus on enrolment trends, student outcomes, and resource utilisation."
 
 ### Output
 - Executive summary in bullet points

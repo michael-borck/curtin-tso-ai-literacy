@@ -74,7 +74,7 @@ Help participants see beyond automation. This is where AI stops being a time-sav
 
 Example:
 
-> "Write a benchmarking summary comparing this semester's unit performance to 3 previous semesters. Highlight enrollment trends, completion rates, and resource utilization patterns."
+> "Write a benchmarking summary comparing this semester's unit performance to 3 previous semesters. Highlight enrolment trends, completion rates, and resource utilisation patterns."
 
 ---
 

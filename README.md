@@ -16,8 +16,8 @@ This repository contains all materials for the "AI Literacy and Capability Progr
 ## 🧠 Learning Goals
 
 - Automate and streamline internal teaching support operations like business case writing, impact analysis, and data collection
-- Write effective prompts using the CRAFT framework to generate compliance-focused documentation and analyze student data
-- Explore how AI tools can provide proactive insights for support planning and optimization
+- Write effective prompts using the CRAFT framework to generate compliance-focused documentation and analyse student data
+- Explore how AI tools can provide proactive insights for support planning and optimisation
 - Understand AI limitations, privacy, and secure implementation within university policies
 
 ## 📁 Repository Structure

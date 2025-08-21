@@ -11,9 +11,9 @@ Have two different AI assistants critique each other's solutions for agricultura
 
 Example prompt for the critique phase:
 ```
-I received this crop rotation suggestion from another AI assistant for a client's farm in a semi-arid region. Can you analyze it and identify:
+I received this crop rotation suggestion from another AI assistant for a client's farm in a semi-arid region. Can you analyse it and identify:
 1. Potential risks it might overlook (e.g., nutrient depletion, specific disease pressure)
-2. Resource efficiency considerations (e.g., water usage, fertilizer needs)
+2. Resource efficiency considerations (e.g., water usage, fertiliser needs)
 3. Ways to make it more resilient to climate variability
 4. Alternative or complementary approaches that might work better for sustainable yield
 
@@ -22,10 +22,10 @@ I received this crop rotation suggestion from another AI assistant for a client'
 
 ### Different AIs for Different Roles
 
-Assign different AI assistants to specialized roles within agricultural consulting:
+Assign different AI assistants to specialised roles within agricultural consulting:
 
 -   **Farm Architect AI**: Help with overall farm design, layout, or long-term sustainability plans.
--   **Crop Implementation AI**: Generate specific recommendations for planting schedules, fertilizer application rates, or pest control strategies.
+-   **Crop Implementation AI**: Generate specific recommendations for planting schedules, fertiliser application rates, or pest control strategies.
 -   **Soil Testing AI**: Identify potential nutrient deficiencies, suggest soil amendment strategies, or interpret complex soil analysis reports.
 -   **Market Analysis AI**: Help document market trends for specific crops or livestock, and suggest optimal times for selling produce.
 
@@ -39,7 +39,7 @@ Guide the AI through a complex agricultural problem step by step:
 
 1.  **Start with problem definition**: "I need to develop a sustainable water management plan for an almond orchard facing increased drought conditions".
 2.  **Ask for an analysis**: "What are the key factors we need to consider for water conservation in almond production?".
-3.  **Request an approach**: "What irrigation techniques and monitoring strategies could we use to optimize water use?".
+3.  **Request an approach**: "What irrigation techniques and monitoring strategies could we use to optimise water use?".
 4.  **Get implementation**: "Can you outline a phased implementation plan for drip irrigation conversion and soil moisture sensor integration?".
 5.  **Ask for evaluation**: "How would you measure the success and impact of this water management plan over a growing season?".
 
@@ -50,8 +50,8 @@ This shows a methodical development process for a farm solution rather than just
 Ask AI to explain existing agricultural practices or technologies to build your understanding:
 
 1.  Find relevant case studies or technology descriptions (e.g., a report on precision agriculture implementation in a specific region).
-2.  Ask the AI to explain how it works line-by-line (e.g., how variable rate fertilization operates, or the principles of no-till farming).
-3.  Ask what could be improved or customized for a client's specific farm.
+2.  Ask the AI to explain how it works line-by-line (e.g., how variable rate fertilisation operates, or the principles of no-till farming).
+3.  Ask what could be improved or customised for a client's specific farm.
 4.  Use this understanding to build your own recommendations or implementation plans.
 
 Example:
@@ -100,7 +100,7 @@ Document how different prompting styles yield different quality responses.
 Have the AI help narrate the development journey of a farm project or advisory process:
 
 ```
-I've helped a client implement a new precision agriculture system and optimized their fertilizer application. Can you help me create a narrative that explains:
+I've helped a client implement a new precision agriculture system and optimised their fertiliser application. Can you help me create a narrative that explains:
 1. The challenges the farmer faced before implementation
 2. The design decisions made for the system (e.g., sensor placement, data integration)
 3. How the components work together to save costs and improve yields
@@ -119,7 +119,7 @@ I'm considering these three approaches for integrated pest management (IPM) in a
 2. Targeted application of biopesticides
 3. A combination of cultural practices and early detection technologies
 
-Can you analyze the pros and cons of each for a high-value vegetable crop, considering effectiveness, cost, and regulatory compliance?
+Can you analyse the pros and cons of each for a high-value vegetable crop, considering effectiveness, cost, and regulatory compliance?
 ```
 
 Document how this analysis informed your implementation choice or recommendation.
@@ -128,7 +128,7 @@ Document how this analysis informed your implementation choice or recommendation
 
 Have AI review your data analysis scripts or farm management software configurations, then critically evaluate its suggestions:
 
-1.  Share a script you've written for analyzing drone imagery for crop health with the AI.
+1.  Share a script you've written for analysing drone imagery for crop health with the AI.
 2.  Ask for a detailed review: "What could be improved in this Python script for calculating NDVI from drone images?".
 3.  Evaluate each suggestion critically - accept some, question others.
 4.  Document your reasoning for accepting or rejecting each suggestion.
@@ -138,7 +138,7 @@ This demonstrates your ability to think critically about AI advice rather than a
 
 ## Interactive Development
 
-### Iterative Refinement Sessions (for optimizing farm practices)
+### Iterative Refinement Sessions (for optimising farm practices)
 
 Document a series of improvements to a single agricultural practice or system:
 
@@ -167,7 +167,7 @@ Document how these "what if" scenarios helped you build more robust farm plans a
 Use AI to generate comprehensive test cases for agricultural scenarios:
 
 1.  Ask for a variety of test inputs: "What test cases should I use to verify my nutrient calculator function for different soil types and crop requirements?".
-2.  Request edge cases: "What unusual inputs (e.g., extremely low pH, very high salinity) might break our fertilizer recommendation algorithm?".
+2.  Request edge cases: "What unusual inputs (e.g., extremely low pH, very high salinity) might break our fertiliser recommendation algorithm?".
 3.  Generate test data: "Can you provide sample historical weather data that would test how our drought mitigation strategy performs under severe conditions?".
 4.  Create a test plan: "How would you structure a testing approach for validating the entire farm management software for a new client?".
 

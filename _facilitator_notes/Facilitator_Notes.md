@@ -103,7 +103,7 @@
 
 -   **Purpose:** Demonstrate AI's ability to handle repetitive teaching support tasks, particularly around compliance documentation and impact analysis.
     
--   **Key Message:** "AI isn't just for answering questions — it can draft business cases, check compliance, analyze impacts, and consolidate data. We're not just automating what we do — we're enhancing our strategic value."
+-   **Key Message:** "AI isn't just for answering questions — it can draft business cases, check compliance, analyse impacts, and consolidate data. We're not just automating what we do — we're enhancing our strategic value."
     
 -   **Live Demo Setup:**
     
@@ -143,11 +143,11 @@
             
         -   **Setup:** Open the CSV in Excel with Copilot.
             
-        -   **Prompt:** "Analyze this enrollment data and identify which units are at risk of low numbers. Create a summary table showing units with declining enrollment over 3 semesters."
+        -   **Prompt:** "Analyse this enrolment data and identify which units are at risk of low numbers. Create a summary table showing units with declining enrolment over 3 semesters."
             
-        -   _Show how Copilot analyzes the data and creates insights._
+        -   _Show how Copilot analyses the data and creates insights._
             
-        -   **Follow-Up:** "Generate a chart showing enrollment trends and highlight units that need intervention."
+        -   **Follow-Up:** "Generate a chart showing enrolment trends and highlight units that need intervention."
             
         -   **📌 Highlight:** Transform raw data into actionable insights in minutes, not hours.
             
@@ -195,7 +195,7 @@
         
 -   **Key Takeaway:**
     
-    -   "AI isn't just for answering questions — it can draft business cases, check compliance, analyze impacts, and consolidate data. We're not just automating what we do — we're enhancing our strategic value."
+    -   "AI isn't just for answering questions — it can draft business cases, check compliance, analyse impacts, and consolidate data. We're not just automating what we do — we're enhancing our strategic value."
         
 
 #### **🔨 0:30–0:45 — Prompt Crafting with CRAFT**
@@ -226,7 +226,7 @@
             
         -   **R** = **Role**: "Who should the AI pretend to be? (e.g., 'You are a senior Teaching Support Officer.')"
             
-        -   **A** = **Action**: "What do you want the AI to _do_? (e.g., 'Analyse enrollment trends and resource utilization.')"
+        -   **A** = **Action**: "What do you want the AI to _do_? (e.g., 'Analyse enrolment trends and resource utilisation.')"
             
         -   **F** = **Format**: "How should the output be structured? (e.g., 'Write in bullet points.')"
             
@@ -240,7 +240,7 @@
             
         -   **Original Prompt:** "What's happening with student numbers?"
             
-        -   **Improved Prompt:** "This is enrollment data from engineering units at Curtin over three semesters. You are an experienced Teaching Support Officer. Analyse the enrollment trends and identify any units at risk of low numbers. Output in three bullet points using clear language for the faculty board."
+        -   **Improved Prompt:** "This is enrolment data from engineering units at Curtin over three semesters. You are an experienced Teaching Support Officer. Analyse the enrolment trends and identify any units at risk of low numbers. Output in three bullet points using clear language for the faculty board."
             
         -   _Show the difference in output quality (if possible, by running both in your LLM)._
             
@@ -350,7 +350,7 @@
         
         -   "Think of a task you've never had time for. Now, try to write a prompt that _tries_ to do that thing. What happens?"
             
-        -   _Example: "Write a benchmarking summary comparing this semester's unit performance to 3 previous semesters. Highlight enrollment trends, completion rates, and resource utilization patterns."_
+        -   _Example: "Write a benchmarking summary comparing this semester's unit performance to 3 previous semesters. Highlight enrolment trends, completion rates, and resource utilisation patterns."_
             
 -   **Key Takeaway:**
     
@@ -397,7 +397,7 @@
             
     -   **🚀 Strategy Summary: Prompt, Process, Protect:**
         
-        -   "To summarize our approach to responsible AI use:"
+        -   "To summarise our approach to responsible AI use:"
             
             1.  **Prompt It:** "Use AI chat to test your thinking, summarise ideas, and shape workflows."
                 
@@ -468,7 +468,7 @@
             
             -   "What was the original task?"
                 
-            -   "What was the AI's output like (briefly summarize)?"
+            -   "What was the AI's output like (briefly summarise)?"
                 
             -   "What was your revised or improved prompt (if applicable)?"
                 

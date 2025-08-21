@@ -10,7 +10,7 @@ Quick, direct prompts that deliver a response in a single step.
 
 #### 🔹 Summarise a table
 
-> "You are a Teaching Support Officer. Summarise this student enrollment data table. Highlight which units have capacity issues and any concerning trends in student progression."
+> "You are a Teaching Support Officer. Summarise this student enrolment data table. Highlight which units have capacity issues and any concerning trends in student progression."
 
 #### 🔹 Rewrite for a client
 
@@ -22,7 +22,7 @@ Quick, direct prompts that deliver a response in a single step.
 
 #### 🔹 Strategy from data
 
-> "Based on this enrollment and resource data, provide three strategic options for next semester's unit offerings. Label each option and explain impact on students and resources."
+> "Based on this enrolment and resource data, provide three strategic options for next semester's unit offerings. Label each option and explain impact on students and resources."
 
 #### 🔹 Debate or dual perspectives
 
@@ -74,7 +74,7 @@ Use prompts like a dialogue — AI is your thinking partner, not just a generato
 
 #### 🔹 Full CRAFT prompt
 
-> "This data is from Curtin's engineering faculty across three semesters. You are a senior Teaching Support Officer. Summarise trends in unit delivery, focusing on resource utilization and student outcomes. Output in bullet points for a faculty planning document."
+> "This data is from Curtin's engineering faculty across three semesters. You are a senior Teaching Support Officer. Summarise trends in unit delivery, focusing on resource utilisation and student outcomes. Output in bullet points for a faculty planning document."
 
 #### 🔹 CRAFT follow-up chain
 
@@ -91,7 +91,7 @@ Use prompts like a dialogue — AI is your thinking partner, not just a generato
 > You are a senior Teaching Support Officer.  
 > Analyse key trends and anomalies.  
 > Use bullet points.  
-> Focus on enrollment, completion rates, and resource allocation."
+> Focus on enrolment, completion rates, and resource allocation."
 
 ---
 
