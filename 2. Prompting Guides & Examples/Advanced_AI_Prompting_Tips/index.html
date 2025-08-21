@@ -1,0 +1,1434 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../1.%20Agenda%20%26%20Overview/Seminar_Agenda/">
+      
+      
+        <link rel="next" href="../CRAFT_Prompting_Framework/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+    
+    
+      
+        <title>Advanced AI Prompting Tips - TSO AI Literacy Program Handouts</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#using-multiple-ai-assistants" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TSO AI Literacy Program Handouts" class="md-header__button md-logo" aria-label="TSO AI Literacy Program Handouts" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TSO AI Literacy Program Handouts
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Advanced AI Prompting Tips
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TSO AI Literacy Program Handouts" class="md-nav__button md-logo" aria-label="TSO AI Literacy Program Handouts" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    TSO AI Literacy Program Handouts
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Welcome
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    1. Agenda & Overview
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            1. Agenda & Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20Agenda%20%26%20Overview/Seminar_Agenda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Seminar Agenda
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    2. Prompting Guides & Examples
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            2. Prompting Guides & Examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Advanced AI Prompting Tips
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced AI Prompting Tips
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-multiple-ai-assistants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Multiple AI Assistants
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Multiple AI Assistants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-debate-technique" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Debate Technique
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#different-ais-for-different-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Different AIs for Different Roles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-prompting-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Prompting Techniques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Prompting Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chain-of-thought-programming-for-problem-solving-in-agriculture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chain-of-Thought Programming (for problem-solving in agriculture)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reverse-engineering-for-understanding-agricultural-practicestechnologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reverse Engineering (for understanding agricultural practices/technologies)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#progressive-disclosure-for-refining-agricultural-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Progressive Disclosure (for refining agricultural solutions)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persona-based-prompting-for-diverse-perspectives-in-agriculture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persona-Based Prompting (for diverse perspectives in agriculture)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-engineering-experiments-for-exploring-different-ai-response-qualities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt Engineering Experiments (for exploring different AI response qualities)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creative-documentation-approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creative Documentation Approaches
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creative Documentation Approaches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-storytelling-for-agricultural-project-narratives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Storytelling (for agricultural project narratives)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparative-analysis-for-evaluating-agricultural-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparative Analysis (for evaluating agricultural solutions)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-review-practice-for-reviewing-agricultural-data-analysis-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Review Practice (for reviewing agricultural data analysis scripts)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interactive-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactive Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interactive Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iterative-refinement-sessions-for-optimising-farm-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iterative Refinement Sessions (for optimising farm practices)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-driven-development-for-preparing-for-agricultural-contingencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error-Driven Development (for preparing for agricultural contingencies)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-assisted-testing-for-validating-agricultural-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI-Assisted Testing (for validating agricultural recommendations)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-implementation-comparison-for-exploring-diverse-agricultural-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Implementation Comparison (for exploring diverse agricultural solutions)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CRAFT_Prompting_Framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CRAFT Prompting Framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Prompt_Chaining_Techniques/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prompt Chaining Techniques
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Prompt_Examples_Value_Adding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prompt Examples Value Adding
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Prompt_Playbook_for_Consultants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prompt Playbook for Consultants
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    3. Foundational Concepts & Discussion Points
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            3. Foundational Concepts & Discussion Points
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3.%20Foundational%20Concepts%20%26%20Discussion%20Points/AI_Core_Tensions_Handout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AI Core Tensions Handout
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3.%20Foundational%20Concepts%20%26%20Discussion%20Points/AI_Unlocking_Impossible_Tasks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AI Unlocking Impossible Tasks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3.%20Foundational%20Concepts%20%26%20Discussion%20Points/Secure_Sustainable_AI_Use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Secure & Sustainable AI Use
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    4. Worksheets & Data
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            4. Worksheets & Data
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4.%20Worksheets%20%26%20Data/tso_mock_unit_data.csv" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mock Unit Data
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4.%20Worksheets%20%26%20Data/Personal_AI_Challenge_Worksheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Personal AI Challenge Worksheet
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    5. Wrap-Up
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            5. Wrap-Up
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5.%20Wrap-Up/Seminar_Wrap_and_Key_Takeways/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Seminar Wrap and Key Takeaways
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    6. Post-Seminar Materials
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            6. Post-Seminar Materials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6.%20Post-Seminar%20Materials/TSO_Evaluation_Followup_Options/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Evaluation & Followup Options
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-multiple-ai-assistants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Multiple AI Assistants
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Multiple AI Assistants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-debate-technique" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Debate Technique
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#different-ais-for-different-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Different AIs for Different Roles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-prompting-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Prompting Techniques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Prompting Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chain-of-thought-programming-for-problem-solving-in-agriculture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chain-of-Thought Programming (for problem-solving in agriculture)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reverse-engineering-for-understanding-agricultural-practicestechnologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reverse Engineering (for understanding agricultural practices/technologies)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#progressive-disclosure-for-refining-agricultural-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Progressive Disclosure (for refining agricultural solutions)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persona-based-prompting-for-diverse-perspectives-in-agriculture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persona-Based Prompting (for diverse perspectives in agriculture)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-engineering-experiments-for-exploring-different-ai-response-qualities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt Engineering Experiments (for exploring different AI response qualities)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creative-documentation-approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creative Documentation Approaches
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creative Documentation Approaches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-storytelling-for-agricultural-project-narratives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Storytelling (for agricultural project narratives)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparative-analysis-for-evaluating-agricultural-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparative Analysis (for evaluating agricultural solutions)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-review-practice-for-reviewing-agricultural-data-analysis-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Review Practice (for reviewing agricultural data analysis scripts)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interactive-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactive Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interactive Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iterative-refinement-sessions-for-optimising-farm-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iterative Refinement Sessions (for optimising farm practices)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-driven-development-for-preparing-for-agricultural-contingencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error-Driven Development (for preparing for agricultural contingencies)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-assisted-testing-for-validating-agricultural-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI-Assisted Testing (for validating agricultural recommendations)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-implementation-comparison-for-exploring-diverse-agricultural-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Implementation Comparison (for exploring diverse agricultural solutions)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Advanced AI Prompting Tips</h1>
+
+<h2 id="using-multiple-ai-assistants">Using Multiple AI Assistants</h2>
+<h3 id="ai-debate-technique">AI Debate Technique</h3>
+<p>Have two different AI assistants critique each other's solutions for agricultural challenges:</p>
+<ol>
+<li><strong>Get an initial solution</strong> from Assistant A (e.g., a crop rotation plan for a specific soil type).</li>
+<li><strong>Ask Assistant B to critique it</strong>, highlighting strengths and weaknesses (e.g., considering water availability or pest resistance).</li>
+<li><strong>Take Assistant B's critique back to Assistant A</strong> for improvements (e.g., refining the rotation based on the critique).</li>
+<li><strong>Document this "debate"</strong> as part of your farm management or advisory process.</li>
+</ol>
+<p>Example prompt for the critique phase:</p>
+<pre><code>I received this crop rotation suggestion from another AI assistant for a client's farm in a semi-arid region. Can you analyse it and identify:
+1. Potential risks it might overlook (e.g., nutrient depletion, specific disease pressure)
+2. Resource efficiency considerations (e.g., water usage, fertiliser needs)
+3. Ways to make it more resilient to climate variability
+4. Alternative or complementary approaches that might work better for sustainable yield
+
+[Paste crop rotation plan/summary here]
+</code></pre>
+<h3 id="different-ais-for-different-roles">Different AIs for Different Roles</h3>
+<p>Assign different AI assistants to specialised roles within agricultural consulting:</p>
+<ul>
+<li><strong>Farm Architect AI</strong>: Help with overall farm design, layout, or long-term sustainability plans.</li>
+<li><strong>Crop Implementation AI</strong>: Generate specific recommendations for planting schedules, fertiliser application rates, or pest control strategies.</li>
+<li><strong>Soil Testing AI</strong>: Identify potential nutrient deficiencies, suggest soil amendment strategies, or interpret complex soil analysis reports.</li>
+<li><strong>Market Analysis AI</strong>: Help document market trends for specific crops or livestock, and suggest optimal times for selling produce.</li>
+</ul>
+<p>Document how different AIs approached the same agricultural problem differently, and how you integrated their various perspectives.</p>
+<h2 id="advanced-prompting-techniques">Advanced Prompting Techniques</h2>
+<h3 id="chain-of-thought-programming-for-problem-solving-in-agriculture">Chain-of-Thought Programming (for problem-solving in agriculture)</h3>
+<p>Guide the AI through a complex agricultural problem step by step:</p>
+<ol>
+<li><strong>Start with problem definition</strong>: "I need to develop a sustainable water management plan for an almond orchard facing increased drought conditions".</li>
+<li><strong>Ask for an analysis</strong>: "What are the key factors we need to consider for water conservation in almond production?".</li>
+<li><strong>Request an approach</strong>: "What irrigation techniques and monitoring strategies could we use to optimise water use?".</li>
+<li><strong>Get implementation</strong>: "Can you outline a phased implementation plan for drip irrigation conversion and soil moisture sensor integration?".</li>
+<li><strong>Ask for evaluation</strong>: "How would you measure the success and impact of this water management plan over a growing season?".</li>
+</ol>
+<p>This shows a methodical development process for a farm solution rather than just asking for a complete plan.</p>
+<h3 id="reverse-engineering-for-understanding-agricultural-practicestechnologies">Reverse Engineering (for understanding agricultural practices/technologies)</h3>
+<p>Ask AI to explain existing agricultural practices or technologies to build your understanding:</p>
+<ol>
+<li>Find relevant case studies or technology descriptions (e.g., a report on precision agriculture implementation in a specific region).</li>
+<li>Ask the AI to explain how it works line-by-line (e.g., how variable rate fertilisation operates, or the principles of no-till farming).</li>
+<li>Ask what could be improved or customised for a client's specific farm.</li>
+<li>Use this understanding to build your own recommendations or implementation plans.</li>
+</ol>
+<p>Example:</p>
+<pre><code>I found this research paper discussing the use of remote sensing for identifying crop stress. Can you explain how the data interpretation works line by line, and suggest how I might adapt this methodology for monitoring nutrient deficiencies in wheat fields for my clients?
+
+[Link to or paste research paper excerpt here]
+</code></pre>
+<h3 id="progressive-disclosure-for-refining-agricultural-solutions">Progressive Disclosure (for refining agricultural solutions)</h3>
+<p>Start with minimal information and gradually provide more context for an agricultural challenge:</p>
+<ol>
+<li>Begin with a basic problem statement: "How would you improve soil health on a conventional farm?".</li>
+<li>After receiving initial advice, add constraints: "The solution needs to be cost-effective for a small-scale farmer and implementable within one growing season".</li>
+<li>Then add more requirements: "It should also focus on increasing microbial activity and reducing reliance on synthetic inputs".</li>
+<li>Finally, provide specific examples: "Like incorporating cover cropping strategies or specific bio-inoculants".</li>
+</ol>
+<p>This helps you understand how adding context affects solutions and prevents the AI from making too many assumptions.</p>
+<h3 id="persona-based-prompting-for-diverse-perspectives-in-agriculture">Persona-Based Prompting (for diverse perspectives in agriculture)</h3>
+<p>Ask the AI to adopt different agricultural perspectives:</p>
+<ul>
+<li>"As an agronomist, how would you design a nutrient management plan for a high-yield corn crop?".</li>
+<li>"As an agricultural economist, what market factors should a farmer consider before investing in a new irrigation system?".</li>
+<li>"As an environmental consultant, what biodiversity conservation strategies could be integrated into a commercial farming operation?".</li>
+</ul>
+<p>Document how these different perspectives influenced your advisory decisions.</p>
+<h3 id="prompt-engineering-experiments-for-exploring-different-ai-response-qualities">Prompt Engineering Experiments (for exploring different AI response qualities)</h3>
+<p>Try the same basic agricultural question with different prompting techniques:</p>
+<ol>
+<li>Direct question: "How do I manage Fusarium blight in barley?".</li>
+<li>Contextual question: "I'm advising a farmer in a humid climate on barley production. How should I approach managing Fusarium blight?".</li>
+<li>Role-based: "You are an expert in plant pathology. How would you recommend managing Fusarium blight in barley?".</li>
+<li>Comparative: "What are three different approaches to managing Fusarium blight in barley, including organic and conventional methods?".</li>
+</ol>
+<p>Document how different prompting styles yield different quality responses.</p>
+<h2 id="creative-documentation-approaches">Creative Documentation Approaches</h2>
+<h3 id="code-storytelling-for-agricultural-project-narratives">Code Storytelling (for agricultural project narratives)</h3>
+<p>Have the AI help narrate the development journey of a farm project or advisory process:</p>
+<pre><code>I've helped a client implement a new precision agriculture system and optimised their fertiliser application. Can you help me create a narrative that explains:
+1. The challenges the farmer faced before implementation
+2. The design decisions made for the system (e.g., sensor placement, data integration)
+3. How the components work together to save costs and improve yields
+4. What I learned throughout the process of advising and implementing this solution
+</code></pre>
+<p>This creates more engaging documentation that shows your learning process and the client's journey.</p>
+<h3 id="comparative-analysis-for-evaluating-agricultural-solutions">Comparative Analysis (for evaluating agricultural solutions)</h3>
+<p>Ask the AI to compare multiple potential solutions for an agricultural problem:</p>
+<pre><code>I'm considering these three approaches for integrated pest management (IPM) in a greenhouse:
+1. Biological control using beneficial insects
+2. Targeted application of biopesticides
+3. A combination of cultural practices and early detection technologies
+
+Can you analyse the pros and cons of each for a high-value vegetable crop, considering effectiveness, cost, and regulatory compliance?
+</code></pre>
+<p>Document how this analysis informed your implementation choice or recommendation.</p>
+<h3 id="code-review-practice-for-reviewing-agricultural-data-analysis-scripts">Code Review Practice (for reviewing agricultural data analysis scripts)</h3>
+<p>Have AI review your data analysis scripts or farm management software configurations, then critically evaluate its suggestions:</p>
+<ol>
+<li>Share a script you've written for analysing drone imagery for crop health with the AI.</li>
+<li>Ask for a detailed review: "What could be improved in this Python script for calculating NDVI from drone images?".</li>
+<li>Evaluate each suggestion critically - accept some, question others.</li>
+<li>Document your reasoning for accepting or rejecting each suggestion.</li>
+<li>Implement the changes you agree with.</li>
+</ol>
+<p>This demonstrates your ability to think critically about AI advice rather than accepting it blindly.</p>
+<h2 id="interactive-development">Interactive Development</h2>
+<h3 id="iterative-refinement-sessions-for-optimising-farm-practices">Iterative Refinement Sessions (for optimising farm practices)</h3>
+<p>Document a series of improvements to a single agricultural practice or system:</p>
+<ol>
+<li>Start with a basic irrigation schedule for a specific crop.</li>
+<li>Ask: "What's one thing I could improve about this irrigation schedule to save water while maintaining yield?".</li>
+<li>Implement the suggestion (e.g., adjust frequency, duration).</li>
+<li>Repeat several times, documenting each iteration (e.g., adding soil moisture sensor data, factoring in weather forecasts).</li>
+<li>Reflect on how the schedule evolved through this process.</li>
+</ol>
+<p>This demonstrates incremental development rather than expecting perfect solutions immediately.</p>
+<h3 id="error-driven-development-for-preparing-for-agricultural-contingencies">Error-Driven Development (for preparing for agricultural contingencies)</h3>
+<p>Deliberately introduce hypothetical agricultural errors or challenges to explore robustness:</p>
+<pre><code>What if a farmer accidentally over-applies a certain herbicide? How would our emergency response protocol handle this, considering crop safety and environmental impact?
+
+What would happen if the weather station data stream we rely on for irrigation scheduling becomes unavailable for 48 hours? How should our system or advisory handle that disruption?
+</code></pre>
+<p>Document how these "what if" scenarios helped you build more robust farm plans and contingency strategies.</p>
+<h3 id="ai-assisted-testing-for-validating-agricultural-recommendations">AI-Assisted Testing (for validating agricultural recommendations)</h3>
+<p>Use AI to generate comprehensive test cases for agricultural scenarios:</p>
+<ol>
+<li>Ask for a variety of test inputs: "What test cases should I use to verify my nutrient calculator function for different soil types and crop requirements?".</li>
+<li>Request edge cases: "What unusual inputs (e.g., extremely low pH, very high salinity) might break our fertiliser recommendation algorithm?".</li>
+<li>Generate test data: "Can you provide sample historical weather data that would test how our drought mitigation strategy performs under severe conditions?".</li>
+<li>Create a test plan: "How would you structure a testing approach for validating the entire farm management software for a new client?".</li>
+</ol>
+<p>Document how these AI-suggested tests improved the reliability of your agricultural advice and tools.</p>
+<h3 id="alternative-implementation-comparison-for-exploring-diverse-agricultural-solutions">Alternative Implementation Comparison (for exploring diverse agricultural solutions)</h3>
+<p>Have AI generate multiple approaches to the same agricultural problem:</p>
+<pre><code>Can you show me three different ways to implement a strategy for managing powdery mildew in grapevines, using:
+1. Conventional chemical applications
+2. Organic-certified biological controls and cultural practices
+3. A predictive modeling approach based on environmental conditions
+
+What are the tradeoffs between these approaches in terms of cost, labor, environmental impact, and effectiveness for a commercial vineyard?
+</code></pre>
+<p>Compare the solutions and document your reasoning for choosing one approach over others for a specific client.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
