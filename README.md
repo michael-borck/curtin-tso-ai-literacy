@@ -1,5 +1,9 @@
 # 🎓 TSO AI Literacy and Capability Program
 
+<!-- BADGES:START -->
+[![presentation](https://img.shields.io/badge/-presentation-9c27b0?style=flat-square)](https://github.com/topics/presentation) [![ai-literacy](https://img.shields.io/badge/-ai--literacy-blue?style=flat-square)](https://github.com/topics/ai-literacy) [![curtin](https://img.shields.io/badge/-curtin-f57c00?style=flat-square)](https://github.com/topics/curtin) [![edtech](https://img.shields.io/badge/-edtech-4caf50?style=flat-square)](https://github.com/topics/edtech) [![education](https://img.shields.io/badge/-education-blue?style=flat-square)](https://github.com/topics/education) [![html](https://img.shields.io/badge/-html-e34f26?style=flat-square)](https://github.com/topics/html) [![microsoft-copilot](https://img.shields.io/badge/-microsoft--copilot-blue?style=flat-square)](https://github.com/topics/microsoft-copilot) [![professional-development](https://img.shields.io/badge/-professional--development-blue?style=flat-square)](https://github.com/topics/professional-development) [![teaching](https://img.shields.io/badge/-teaching-blue?style=flat-square)](https://github.com/topics/teaching) [![training-materials](https://img.shields.io/badge/-training--materials-blue?style=flat-square)](https://github.com/topics/training-materials)
+<!-- BADGES:END -->
+
 **Transforming Teaching Support Operations at Curtin University**
 
 ## Overview
